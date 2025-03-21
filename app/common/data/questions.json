@@ -1,0 +1,173 @@
+{
+  "questions": [
+    {
+      "id": "q001",
+      "question": "L'équipe a-t-elle rencontré des problèmes majeurs lors du dernier sprint ?",
+      "score": {
+        "dark-manifesto": 2,
+        "mad-sad-glad": 1,
+        "dixit": -2,
+        "vis-ma-vie": 0,
+        "start-stop-continue": 1,
+        "la-carte-postale-du-futur": -1,
+        "starfish": 1
+      }
+    },
+    {
+      "id": "q002",
+      "question": "Y a-t-il eu des tensions ou des malentendus entre les membres de l'équipe ?",
+      "score": {
+        "dark-manifesto": 2,
+        "mad-sad-glad": 2,
+        "dixit": 1,
+        "vis-ma-vie": 2,
+        "start-stop-continue": 1,
+        "la-carte-postale-du-futur": -1,
+        "starfish": 0
+      }
+    },
+    {
+      "id": "q003",
+      "question": "Souhaitez-vous recueillir les émotions et ressentis de l'équipe ?",
+      "score": {
+        "dark-manifesto": 0,
+        "mad-sad-glad": 1,
+        "dixit": 2,
+        "vis-ma-vie": 2,
+        "start-stop-continue": 1,
+        "la-carte-postale-du-futur": 0,
+        "starfish": 0
+      }
+    },
+    {
+      "id": "q004",
+      "question": "Le sprint s'est-il bien déroulé, mais vous souhaitez identifier des axes d'amélioration ?",
+      "score": {
+        "dark-manifesto": -1,
+        "mad-sad-glad": 0,
+        "dixit": 1,
+        "vis-ma-vie": 1,
+        "start-stop-continue": 2,
+        "la-carte-postale-du-futur": 1,
+        "starfish": 2
+      }
+    },
+    {
+      "id": "q005",
+      "question": "L'équipe manque-t-elle de communication et de partage d'informations ?",
+      "score": {
+        "dark-manifesto": 2,
+        "mad-sad-glad": 1,
+        "dixit": 2,
+        "vis-ma-vie": 2,
+        "start-stop-continue": 1,
+        "la-carte-postale-du-futur": 1,
+        "starfish": 1
+      }
+    },
+    {
+      "id": "q006",
+      "question": "Avez-vous besoin d'identifier et de prioriser les risques futurs ?",
+      "score": {
+        "dark-manifesto": 2,
+        "mad-sad-glad": 0,
+        "dixit": -1,
+        "vis-ma-vie": 0,
+        "start-stop-continue": 1,
+        "la-carte-postale-du-futur": 2,
+        "starfish": 1
+      }
+    },
+    {
+      "id": "q007",
+      "question": "Souhaitez-vous que l'équipe réfléchisse aux causes profondes des problèmes rencontrés ?",
+      "score": {
+        "dark-manifesto": 2,
+        "mad-sad-glad": 0,
+        "dixit": -1,
+        "vis-ma-vie": 1,
+        "start-stop-continue": 2,
+        "la-carte-postale-du-futur": 0,
+        "starfish": 2
+      }
+    },
+    {
+      "id": "q008",
+      "question": "L'équipe est-elle démotivée ou en manque d'énergie ?",
+      "score": {
+        "dark-manifesto": 1,
+        "mad-sad-glad": 2,
+        "dixit": 2,
+        "vis-ma-vie": 1,
+        "start-stop-continue": 0,
+        "la-carte-postale-du-futur": 1,
+        "starfish": 0
+      }
+    },
+    {
+      "id": "q009",
+      "question": "Y a-t-il des incompréhensions sur les rôles et responsabilités de chacun ?",
+      "score": {
+        "dark-manifesto": 0,
+        "mad-sad-glad": 0,
+        "dixit": 0,
+        "vis-ma-vie": 2,
+        "start-stop-continue": 0,
+        "la-carte-postale-du-futur": 1,
+        "starfish": 1
+      }
+    },
+    {
+      "id": "q010",
+      "question": "Cherchez-vous une rétrospective ludique et engageante ?",
+      "score": {
+        "dark-manifesto": 1,
+        "mad-sad-glad": 0,
+        "dixit": 2,
+        "vis-ma-vie": 1,
+        "start-stop-continue": 0,
+        "la-carte-postale-du-futur": 2,
+        "starfish": 1
+      }
+    },
+    {
+      "id": "q011",
+      "question": "Voulez-vous un format de rétrospective rapide et efficace ?",
+      "score": {
+        "dark-manifesto": 0,
+        "mad-sad-glad": 2,
+        "dixit": 1,
+        "vis-ma-vie": 0,
+        "start-stop-continue": 2,
+        "la-carte-postale-du-futur": 1,
+        "starfish": 0
+      }
+    },
+    {
+      "id": "q012",
+      "question": "Le projet ou le sprint a-t-il été un échec partiel ou total ?",
+      "score": {
+        "dark-manifesto": 2,
+        "mad-sad-glad": 2,
+        "dixit": -1,
+        "vis-ma-vie": -2,
+        "start-stop-continue": 2,
+        "la-carte-postale-du-futur": -1,
+        "starfish": 0
+      }
+    },
+    {
+      "id": "q013",
+      "question": "L'équipe a-t-elle du mal à s'organiser et à bien répartir les tâches ?",
+      "score": {
+        "dark-manifesto": 1,
+        "mad-sad-glad": 0,
+        "dixit": 0,
+        "vis-ma-vie": 2,
+        "start-stop-continue": 1,
+        "la-carte-postale-du-futur": 0,
+        "starfish": 1
+      }
+    }
+  ]
+}

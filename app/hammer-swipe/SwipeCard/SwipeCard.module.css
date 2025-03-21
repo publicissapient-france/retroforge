@@ -1,0 +1,71 @@
+.card {
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 336px;
+    padding: 44px 30px 36px 30px;
+    box-shadow: 0 2px 8px -4px rgba(0, 0, 0, .2);
+    border-radius: 15px;
+    border: 1px solid #EEEEEE;
+    background-color: #FFFFFF;
+    text-align: center;
+    will-change: transform;
+}
+
+.image {
+    height: 200px;
+    margin: auto;
+}
+
+.description {
+    display: flex;
+    margin: 38px 0 40px 0;
+    min-height: 54px;
+    line-height: 18px;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    > * {
+        margin: auto;
+    }
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+/* For small devices, we apply a size factor of: `0.833333`. */
+@media (max-width: 479px) {
+    .card {
+        width: 280px;
+        padding: 36px 25px 30px 25px;
+    }
+
+    .image {
+        height: 166px;
+    }
+
+    .description {
+        margin: 32px 0 33px 0;
+    }
+
+    .actions {
+        padding: 0 13px;
+    }
+}
+
+/* When the device height is small, let's reduce some sizes... */
+@media (max-height: 639px) {
+    .card {
+        padding: 18px 25px 15px 25px;
+    }
+
+    .image {
+        height: 150px;
+    }
+
+    .description {
+        margin: 16px 0 15px 0;
+    }
+}
