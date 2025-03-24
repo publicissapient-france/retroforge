@@ -1,3 +1,5 @@
+@import "../../styles/variables.css";
+
 .footer {
-    height: 66px;
+    height: var(--footer-height);
 }

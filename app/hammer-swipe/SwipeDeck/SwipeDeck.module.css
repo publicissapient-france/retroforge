@@ -1,3 +1,5 @@
+@import "../../common/styles/variables.css";
+
 .deck {
     overflow: hidden;
     position: fixed;
@@ -8,8 +10,8 @@
     > div {
         position: absolute;
         width: 100%;
-        top: 152px;
-        bottom: 66px;
+        top: var(--header-height);
+        bottom: var(--footer-height);
         will-change: transform;
         display: flex;
         align-items: center;
