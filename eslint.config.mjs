@@ -1,5 +1,6 @@
 import js from '@eslint/js'
 import ts from '@typescript-eslint/eslint-plugin'
+import tseslint from 'typescript-eslint'
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
 import simpleImport from 'eslint-plugin-simple-import-sort'
 import tsParser from '@typescript-eslint/parser'
@@ -11,6 +12,7 @@ import unusedImports from 'eslint-plugin-unused-imports'
 
 const eslintConfig = [
   js.configs.recommended,
+  ...tseslint.configs.recommended,
   eslintPluginPrettierRecommended,
   {
     files: ['**/*.ts', '**/*.tsx'],

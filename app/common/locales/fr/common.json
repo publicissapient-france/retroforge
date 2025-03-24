@@ -3,5 +3,9 @@
   "hammerSwipe": {
     "title": "Mode Hammer Swipe !",
     "description": "Answer by yes or no and get the best retro"
+  },
+  "actions": {
+    "yes": "Oui",
+    "no": "Non"
   }
 }
