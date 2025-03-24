@@ -22,7 +22,7 @@ const CARD_ACTIONS_OFFSET = 1000
 
 export type SwipeCardProps = {
   card: Question
-  onRemove: (id: string, action: Action) => void
+  onRemove: (question: Question, action: Action) => void
   index: number
 }
 
@@ -35,7 +35,7 @@ export default function SwipeCard({ card, onRemove, index }: SwipeCardProps) {
 
   function onActionPerformed(action: Action) {
     animate(x, CARD_ACTIONS_OFFSET * action.valueOf(), animationOptions)
-    setTimeout(() => onRemove(card.id, action), 300)
+    setTimeout(() => onRemove(card, action), 300)
   }
 
   return (

@@ -7,9 +7,11 @@ import styles from './SwipeDeck.module.css'
 
 type SwipeDeckProps = {
   questions: Question[]
+  onQuestionAccepted: (question: Question) => void
+  onFinished: () => void
 }
 
-export default function SwipeDeck({ questions }: SwipeDeckProps) {
+export default function SwipeDeck({ questions, onQuestionAccepted, onFinished }: SwipeDeckProps) {
   const [clientSide, setClientSide] = useState(false)
   const [cardStack, setCardStack] = useState(questions)
 
@@ -17,8 +19,14 @@ export default function SwipeDeck({ questions }: SwipeDeckProps) {
     setClientSide(true)
   }, [])
 
-  const removeCard = (id: string, action: Action) => {
-    setCardStack((prev) => prev.filter((card) => card.id !== id))
+  const removeCard = (question: Question, action: Action) => {
+    setCardStack((prev) => prev.filter((card) => card.id !== question.id))
+    if (action === Action.YES) {
+      onQuestionAccepted(question)
+    }
+    if (cardStack.length <= 1) {
+      onFinished()
+    }
   }
 
   return (
