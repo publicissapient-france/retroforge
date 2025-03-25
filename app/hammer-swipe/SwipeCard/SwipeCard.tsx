@@ -4,8 +4,6 @@ import React, { useState } from 'react'
 import { Action, type Question } from '~/hammer-swipe/HammerSwipe'
 import SwipeAction from '~/hammer-swipe/SwipeAction/SwipeAction'
 
-import styles from './SwipeCard.module.css'
-
 const angle = 5
 
 const rotRandom = Array(100)
@@ -66,11 +64,11 @@ export default function SwipeCard({ card, onRemove, index }: SwipeCardProps) {
         opacity,
         zIndex: 100 - index,
       }}
-      className={`absolute w-75 h-125 ${styles.card}`}
+      className="flex flex-col absolute max-md:w-[300px] md:w-[336px] items-center justify-between max-md:h-90 md:h-125 overflow-hidden box-border p-[30px] shadow-[0_2px_8px_-4px_rgba(0,0,0,0.2)] rounded-[15px] border border-[#EEEEEE] bg-white text-center will-change-transform"
     >
-      <img className={styles.image} src="/assets/images/buffalo.png" alt={card.question} draggable={false} width={200} height={200} />
-      <p className={styles.description}>{card.question}</p>
-      <div className={styles.actions}>
+      <img className="max-md:w-36 lg:w-50" src="/images/buffalo.png" alt={card.question} draggable={false} width={200} height={200} />
+      <p className="uppercase max-md:text-[12px] md:text-[14px] min-h-[54px] max-md:leading-[14px] md:leading-[18px]">{card.question}</p>
+      <div className="flex w-full justify-between px-2">
         <SwipeAction type={Action.NO} onClick={onActionPerformed} />
         <SwipeAction type={Action.YES} onClick={onActionPerformed} />
       </div>
