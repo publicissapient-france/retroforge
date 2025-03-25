@@ -11,7 +11,7 @@ export function SwipeMatched({ matched }: SwipeMatchedProps) {
 
   return (
     <>
-      <h2>{t('retrospectives.MATCHED')}</h2>
+      <h2>{t(`retrospectives.${matched.type}`)}</h2>
       <ul>
         {matched.retrospectives.map((retrospective) => (
           <li key={retrospective}>{retrospective}</li>

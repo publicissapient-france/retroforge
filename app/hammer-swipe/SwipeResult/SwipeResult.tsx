@@ -4,7 +4,6 @@ import { RetrospectiveResultType, type TagsRetrospective } from '~/common/types/
 import type { Question } from '~/hammer-swipe/HammerSwipe'
 import { SwipeMatched } from '~/hammer-swipe/SwipeResult/SwipeMatched'
 import { SwipeNoMatch } from '~/hammer-swipe/SwipeResult/SwipeNoMatch'
-import { SwipeNotPertinent } from '~/hammer-swipe/SwipeResult/SwipeNotPertinent'
 import { computeAppropriateRetro } from '~/hammer-swipe/SwipeResult/SwipeResult.utils'
 
 export type SwipeResultProps = {
@@ -19,8 +18,5 @@ export default function SwipeResult({ results, retrospectives }: SwipeResultProp
     return <SwipeNoMatch />
   }
 
-  if (computed.type === RetrospectiveResultType.NOT_PERTINENT) {
-    return <SwipeNotPertinent />
-  }
   return <SwipeMatched matched={computed} />
 }

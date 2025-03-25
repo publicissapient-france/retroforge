@@ -13,9 +13,6 @@ export function computeAppropriateRetro(answers: Question[], tagsRetrospectives:
     }, {})
   const sorted = Object.fromEntries(Object.entries(tagReduced).sort(([, resulta], [, resultb]) => resultb - resulta))
   const scoreValues = new Set(Object.values(sorted))
-  if (scoreValues.size === 1) {
-    return { type: RetrospectiveResultType.NOT_PERTINENT, retrospectives: [] }
-  }
   if (scoreValues.size === 0) {
     return { type: RetrospectiveResultType.NO_MATCH, retrospectives: [] }
   }
@@ -34,7 +31,7 @@ export function computeAppropriateRetro(answers: Question[], tagsRetrospectives:
   }, [])
   const sortedSuggestedRetrospective = weightedSuggestedRetrospective.sort((first, second) => second.weight - first.weight)
   return {
-    type: RetrospectiveResultType.MATCHED,
+    type: scoreValues.size === 1 ? RetrospectiveResultType.NOT_PERTINENT : RetrospectiveResultType.MATCHED,
     retrospectives: sortedSuggestedRetrospective.map((retrospective) => retrospective.retrospective),
   }
 }
