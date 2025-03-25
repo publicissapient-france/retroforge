@@ -33,7 +33,7 @@ export default function SwipeCard({ card, onRemove, index }: SwipeCardProps) {
 
   function onActionPerformed(action: Action) {
     animate(x, CARD_ACTIONS_OFFSET * action.valueOf(), animationOptions)
-    setTimeout(() => onRemove(card, action), 300)
+    setTimeout(() => onRemove(card, action), 400)
   }
 
   return (
