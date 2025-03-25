@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 
 import questions from '~/common/data/questions.json'
+import retrospectives from '~/common/data/retrospectives.json'
 import type { Question } from '~/hammer-swipe/HammerSwipe'
 import SwipeDeck from '~/hammer-swipe/SwipeDeck/SwipeDeck'
+import SwipeResult from '~/hammer-swipe/SwipeResult/SwipeResult'
 import i18n from '~/i18n'
 
 export function meta() {
@@ -29,7 +31,7 @@ export default function HammerSwipePage() {
   }
 
   if (flow === HammerSwipeFlow.FINISHED) {
-    return <p>Results : {answers.length}</p>
+    return <SwipeResult results={answers} retrospectives={retrospectives.retrospectives} />
   }
 
   return (

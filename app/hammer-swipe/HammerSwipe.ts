@@ -6,7 +6,7 @@ export enum Action {
 export type Question = {
   id: string
   question: string
-  score: Record<string, number>
+  tags: string[]
 }
 
 export type Questions = {

@@ -1,0 +1,40 @@
+{
+  "retrospectives": [
+    {
+      "name": "Mad Sad Glad",
+      "tags": ["Mood", "Sprint"]
+    },
+    {
+      "name": "Dixit",
+      "tags": ["Fun", "Innovation"]
+    },
+    {
+      "name": "Start Stop Continue",
+      "tags": ["Processus", "Performance"]
+    },
+    {
+      "name": "Dark Manifesto",
+      "tags": ["Conflits", "Vision"]
+    },
+    {
+      "name": "Vis ma vie",
+      "tags": ["Vision"]
+    },
+    {
+      "name": "La carte postale du futur",
+      "tags": ["Vision", "Innovation"]
+    },
+    {
+      "name": "4L",
+      "tags": ["Vision", "Innovation"]
+    },
+    {
+      "name": "Speed boat",
+      "tags": ["Vision", "Innovation"]
+    },
+    {
+      "name": "Starfish",
+      "tags": ["Processus"]
+    }
+  ]
+}
