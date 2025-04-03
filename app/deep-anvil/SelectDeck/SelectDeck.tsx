@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 
 import type { SelectQuestion, SelectResponse } from '~/deep-anvil/DeepAnvil'
 import SelectCard from '~/deep-anvil/SelectCard/SelectCard'
+import { SelectProgress } from '~/deep-anvil/SelectProgress/SelectProgress'
 
 export type SelectDeckProps = {
   questions: SelectQuestion[]
@@ -28,8 +29,11 @@ export function SelectDeck({ questions, onFinished, onSelectedResponse }: Select
   }
 
   return (
-    currentQuestion !== undefined && (
-      <SelectCard question={currentQuestion} onSelected={handleSelectedResponse} />
-    )
+    <div className="flex flex-col items-center justify-center gap-5">
+      <SelectProgress progress={currentIndex + 1} total={questions.length} />
+      {currentQuestion !== undefined && (
+        <SelectCard question={currentQuestion} onSelected={handleSelectedResponse} />
+      )}
+    </div>
   )
 }
