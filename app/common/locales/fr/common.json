@@ -2,7 +2,11 @@
   "title": "Retroforge",
   "hammerSwipe": {
     "title": "Mode Hammer Swipe !",
-    "description": "Answer by yes or no and get the best retro"
+    "description": "Swippez vers la gauche ou la droite pour obtenir la retrospective la plus adaptée !"
+  },
+  "deepAnvil": {
+    "title": "Mode Deep Anvil !",
+    "description": "Sélectionnez la réponse qui vous correspond le mieux parmis la liste pour obtenir la retrospective la plus adaptée !"
   },
   "actions": {
     "yes": "Oui",

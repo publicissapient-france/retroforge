@@ -1,3 +1,5 @@
+import type { Tags } from '~/common/types/Tags'
+
 export enum Action {
   YES = 1,
   NO = -1,
@@ -6,7 +8,7 @@ export enum Action {
 export type Question = {
   id: string
   question: string
-  tags: string[]
+  tags: Tags
 }
 
 export type Questions = {

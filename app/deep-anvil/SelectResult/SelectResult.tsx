@@ -4,19 +4,19 @@ import { NoRetrospectiveMatch } from '~/common/components/NoRestrospectiveMatch/
 import { RetrospectiveMatched } from '~/common/components/RetrospectiveMatched/RetrospectiveMatched'
 import { type Computation, computeAppropriateRetro } from '~/common/computations/questions-compute'
 import { RetrospectiveResultType, type TagsRetrospective } from '~/common/types/Restrospective'
-import type { Question } from '~/hammer-swipe/HammerSwipe'
+import type { SelectResponse } from '~/deep-anvil/DeepAnvil'
 
-export type SwipeResultProps = {
-  results: Question[]
+export type SelectResultProps = {
+  results: SelectResponse[]
   retrospectives: TagsRetrospective[]
 }
 
-export default function SwipeResult({ results, retrospectives }: SwipeResultProps) {
+export function SelectResult({ results, retrospectives }: SelectResultProps) {
   const computed = useMemo(() => {
-    const mappedResults: Computation[] = results.map((result) => ({ id: result.id, question: result.question, response: { tags: result.tags } }))
+    const mappedResults: Computation[] = results.map((result) => ({ id: result.id, question: result.value, response: { tags: result.tags } }))
     return computeAppropriateRetro(mappedResults, retrospectives)
   }, [results, retrospectives])
-
+  
   if (computed.type === RetrospectiveResultType.NO_MATCH) {
     return <NoRetrospectiveMatch />
   }

@@ -2,11 +2,11 @@ import { useTranslation } from 'react-i18next'
 
 import type { RetrospectiveResult } from '~/common/types/Restrospective'
 
-export type SwipeMatchedProps = {
+export type RetrospectiveMatchedProps = {
   matched: RetrospectiveResult
 }
 
-export function SwipeMatched({ matched }: SwipeMatchedProps) {
+export function RetrospectiveMatched({ matched }: RetrospectiveMatchedProps) {
   const { t } = useTranslation()
 
   return (

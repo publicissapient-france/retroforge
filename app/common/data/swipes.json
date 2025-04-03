@@ -1,0 +1,69 @@
+{
+  "questions": [
+    {
+      "id": "q001",
+      "question": "L'équipe a-t-elle rencontré des problèmes majeurs lors du dernier sprint ?",
+      "tags": ["Sprint", "Processus", "Performance"]
+    },
+    {
+      "id": "q002",
+      "question": "Y a-t-il eu des tensions ou des malentendus entre les membres de l'équipe ?",
+      "tags": ["Conflits"]
+    },
+    {
+      "id": "q003",
+      "question": "Souhaitez-vous recueillir les émotions et ressentis de l'équipe ?",
+      "tags": ["Mood"]
+    },
+    {
+      "id": "q004",
+      "question": "Le sprint s'est-il bien déroulé, mais vous souhaitez identifier des axes d'amélioration ?",
+      "tags": ["Sprint", "Performance"]
+    },
+    {
+      "id": "q005",
+      "question": "L'équipe manque-t-elle de communication et de partage d'informations ?",
+      "tags": ["Conflits", "Processus"]
+    },
+    {
+      "id": "q006",
+      "question": "Avez-vous besoin d'identifier et de prioriser les risques futurs ?",
+      "tags": ["Vision", "Processus"]
+    },
+    {
+      "id": "q007",
+      "question": "Souhaitez-vous que l'équipe réfléchisse aux causes profondes des problèmes rencontrés ?",
+      "tags": ["Vision", "Processus"]
+    },
+    {
+      "id": "q008",
+      "question": "L'équipe est-elle démotivée ou en manque d'énergie ?",
+      "tags": ["Mood", "Fun", "Innovation"]
+    },
+    {
+      "id": "q009",
+      "question": "Y a-t-il des incompréhensions sur les rôles et responsabilités de chacun ?",
+      "tags": ["Conflits", "Processus"]
+    },
+    {
+      "id": "q010",
+      "question": "Cherchez-vous une rétrospective ludique et engageante ?",
+      "tags": ["Fun", "Innovation"]
+    },
+    {
+      "id": "q011",
+      "question": "Voulez-vous un format de rétrospective rapide et efficace ?",
+      "tags": ["Performance"]
+    },
+    {
+      "id": "q012",
+      "question": "Le projet ou le sprint a-t-il été un échec partiel ou total ?",
+      "tags": ["Sprint", "Performance"]
+    },
+    {
+      "id": "q013",
+      "question": "L'équipe a-t-elle du mal à s'organiser et à bien répartir les tâches ?",
+      "tags": ["Processus"]
+    }
+  ]
+}

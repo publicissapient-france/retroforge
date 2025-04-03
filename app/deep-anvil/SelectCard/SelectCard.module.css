@@ -1,0 +1,3 @@
+.select-card > li:has(input:checked) {
+    background: #FAFAFA;
+}

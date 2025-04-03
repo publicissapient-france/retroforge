@@ -1,9 +1,25 @@
-import { type RetrospectiveResult, RetrospectiveResultType, type SuggestedRetrospective, type TagsRetrospective } from '~/common/types/Restrospective'
-import type { Question } from '~/hammer-swipe/HammerSwipe'
+import {
+  type RetrospectiveResult,
+  RetrospectiveResultType,
+  type SuggestedRetrospective,
+  type TagsRetrospective,
+} from '~/common/types/Restrospective'
+import type { Tags } from '~/common/types/Tags'
 
-export function computeAppropriateRetro(answers: Question[], tagsRetrospectives: TagsRetrospective[]): RetrospectiveResult {
+export type Computation = {
+  id: string
+  question: string
+  response: ResponseComputation
+}
+
+export type ResponseComputation = {
+  tags: Tags
+}
+
+
+export function computeAppropriateRetro(answers: Computation[], tagsRetrospectives: TagsRetrospective[]): RetrospectiveResult {
   const tagReduced = answers
-    .flatMap((result) => result.tags)
+    .flatMap((result) => result.response.tags)
     .reduce<Record<string, number>>((acc, tag) => {
       if (tag in acc) {
         return { ...acc, [tag]: acc[tag] + 1 }
@@ -11,7 +27,10 @@ export function computeAppropriateRetro(answers: Question[], tagsRetrospectives:
 
       return { ...acc, [tag]: 1 }
     }, {})
-  const sorted = Object.fromEntries(Object.entries(tagReduced).sort(([, resulta], [, resultb]) => resultb - resulta))
+  const sorted = Object.fromEntries(
+    Object.entries(tagReduced)
+      .sort(([, resulta], [, resultb]) => resultb - resulta),
+  )
   const scoreValues = new Set(Object.values(sorted))
   if (scoreValues.size === 0) {
     return { type: RetrospectiveResultType.NO_MATCH, retrospectives: [] }

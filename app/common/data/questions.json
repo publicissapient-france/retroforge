@@ -2,68 +2,187 @@
   "questions": [
     {
       "id": "q001",
-      "question": "L'équipe a-t-elle rencontré des problèmes majeurs lors du dernier sprint ?",
-      "tags": ["Sprint", "Processus", "Performance"]
+      "question": "Comment décris-tu ton niveau en tant que Scrum Master?",
+      "responses": [
+        {
+          "id": "q001-r001",
+          "value": "Junior",
+          "tags": ["Sprint"]
+        },
+        {
+          "id": "q001-r002",
+          "value": "Intermédiaire",
+          "tags": ["Sprint", "Processus"]
+        },
+        {
+          "id": "q001-r003",
+          "value": "Senior",
+          "tags": ["Sprint", "Processus", "Performance"]
+        }
+      ]
     },
     {
       "id": "q002",
-      "question": "Y a-t-il eu des tensions ou des malentendus entre les membres de l'équipe ?",
-      "tags": ["Conflits"]
+      "question": "Comment te sens-tu dans cette équipe ?",
+      "responses": [
+        {
+          "id": "q002-r001",
+          "value": "Je viens d'arriver, je les découvre",
+          "tags": ["mood"]
+        },
+        {
+          "id": "q002-r002",
+          "value": "Je commence à les connaître",
+          "tags": ["mood", "Processus"]
+        },
+        {
+          "id": "q002-r003",
+          "value": "On se connait bien",
+          "tags": ["Fun", "Processus", "Performance"]
+        }
+      ]
     },
     {
       "id": "q003",
-      "question": "Souhaitez-vous recueillir les émotions et ressentis de l'équipe ?",
-      "tags": ["Mood"]
+      "question": "À quel point es-tu disposé.e à préparer la rétrospective ?",
+      "responses": [
+        {
+          "id": "q003-r001",
+          "value": "J'ai pas le temps",
+          "tags": ["Rapide"]
+        },
+        {
+          "id": "q003-r002",
+          "value": "Je peux m'arranger",
+          "tags": ["Sprint", "Processus"]
+        },
+        {
+          "id": "q003-r003",
+          "value": "Dispo!",
+          "tags": ["Fun", "Innovation"]
+        }
+      ]
     },
     {
       "id": "q004",
-      "question": "Le sprint s'est-il bien déroulé, mais vous souhaitez identifier des axes d'amélioration ?",
-      "tags": ["Sprint", "Performance"]
+      "question": "L’équipe a-t-elle rencontré des problèmes majeurs lors du dernier sprint ?",
+      "responses": [
+        {
+          "id": "q004-r001",
+          "value": "Pas du tout",
+          "tags": []
+        },
+        {
+          "id": "q004-r002",
+          "value": "Un peu",
+          "tags": ["Sprint", "Processus"]
+        },
+        {
+          "id": "q004-r003",
+          "value": "Beaucoup",
+          "tags": ["Sprint", "Processus", "Performance"]
+        }
+      ]
     },
     {
       "id": "q005",
-      "question": "L'équipe manque-t-elle de communication et de partage d'informations ?",
-      "tags": ["Conflits", "Processus"]
+      "question": "Y a-t-il eu des tensions ou des malentendus entre les membres de l'équipe ?",
+      "responses": [
+        {
+          "id": "q005-r001",
+          "value": "Non",
+          "tags": []
+        },
+        {
+          "id": "q005-r002",
+          "value": "Oui",
+          "tags": ["Conflits", "Processus"]
+        }
+      ]
     },
     {
       "id": "q006",
-      "question": "Avez-vous besoin d'identifier et de prioriser les risques futurs ?",
-      "tags": ["Vision", "Processus"]
+      "question": "Ressentez-vous un manque de motivation, d’énergie, de dynamisme dans le groupe ?",
+      "responses": [
+        {
+          "id": "q006-r001",
+          "value": "Non",
+          "tags": []
+        },
+        {
+          "id": "q006-r002",
+          "value": "Oui",
+          "tags": ["mood"]
+        }
+      ]
     },
     {
       "id": "q007",
-      "question": "Souhaitez-vous que l'équipe réfléchisse aux causes profondes des problèmes rencontrés ?",
-      "tags": ["Vision", "Processus"]
+      "question": "Sommes-nous dans une période spéciale ? (événement sportif, saisonnalité, Halloween, fin d'année, etc.)",
+      "responses": [
+        {
+          "id": "q007-r001",
+          "value": "Non",
+          "tags": []
+        },
+        {
+          "id": "q007-r002",
+          "value": "Oui",
+          "tags": ["mood", "Fun"]
+        }
+      ]
     },
     {
       "id": "q008",
-      "question": "L'équipe est-elle démotivée ou en manque d'énergie ?",
-      "tags": ["Mood", "Fun", "Innovation"]
+      "question": "Un problème spécifique à régler ?",
+      "responses": [
+        {
+          "id": "q008-r001",
+          "value": "De vision",
+          "tags": ["Vision"]
+        },
+        {
+          "id": "q008-r002",
+          "value": "De performances",
+          "tags": ["Performance"]
+        },
+        {
+          "id": "q008-r003",
+          "value": "De livraison",
+          "tags": ["Processus"]
+        },
+        {
+          "id": "q008-r004",
+          "value": "De communication",
+          "tags": ["Conflits"]
+        }
+      ]
     },
     {
       "id": "q009",
-      "question": "Y a-t-il des incompréhensions sur les rôles et responsabilités de chacun ?",
-      "tags": ["Conflits", "Processus"]
-    },
-    {
-      "id": "q010",
-      "question": "Cherchez-vous une rétrospective ludique et engageante ?",
-      "tags": ["Fun", "Innovation"]
-    },
-    {
-      "id": "q011",
-      "question": "Voulez-vous un format de rétrospective rapide et efficace ?",
-      "tags": ["Performance"]
-    },
-    {
-      "id": "q012",
-      "question": "Le projet ou le sprint a-t-il été un échec partiel ou total ?",
-      "tags": ["Sprint", "Performance"]
-    },
-    {
-      "id": "q013",
-      "question": "L'équipe a-t-elle du mal à s'organiser et à bien répartir les tâches ?",
-      "tags": ["Processus"]
+      "question": "Quel type de rétro cherchez-vous ?",
+      "responses": [
+        {
+          "id": "q009-r001",
+          "value": "Engageante",
+          "tags": ["mood"]
+        },
+        {
+          "id": "q009-r002",
+          "value": "Fun",
+          "tags": ["Fun"]
+        },
+        {
+          "id": "q009-r003",
+          "value": "Rapide",
+          "tags": ["Performance"]
+        },
+        {
+          "id": "q009-r004",
+          "value": "Créative",
+          "tags": ["Innovation"]
+        }
+      ]
     }
   ]
 }
