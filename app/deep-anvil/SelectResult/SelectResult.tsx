@@ -13,7 +13,7 @@ export type SelectResultProps = {
 
 export function SelectResult({ results, retrospectives }: SelectResultProps) {
   const computed = useMemo(() => {
-    const mappedResults: Computation[] = results.map((result) => ({ id: result.id, question: result.value, response: { tags: result.tags } }))
+    const mappedResults: Computation[] = results.map((result) => ({ id: result.id, question: result.label, response: { tags: result.tags } }))
     return computeAppropriateRetro(mappedResults, retrospectives)
   }, [results, retrospectives])
   

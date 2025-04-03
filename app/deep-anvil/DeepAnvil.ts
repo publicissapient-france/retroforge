@@ -8,7 +8,7 @@ export type SelectQuestion = {
 
 export type SelectResponse = {
   id: string
-  value: string
+  label: string
   tags: Tags
 }
 

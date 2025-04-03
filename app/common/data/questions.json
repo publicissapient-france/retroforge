@@ -6,17 +6,17 @@
       "responses": [
         {
           "id": "q001-r001",
-          "value": "Junior",
+          "label": "Junior",
           "tags": ["Sprint"]
         },
         {
           "id": "q001-r002",
-          "value": "Intermédiaire",
+          "label": "Intermédiaire",
           "tags": ["Sprint", "Processus"]
         },
         {
           "id": "q001-r003",
-          "value": "Senior",
+          "label": "Senior",
           "tags": ["Sprint", "Processus", "Performance"]
         }
       ]
@@ -27,17 +27,17 @@
       "responses": [
         {
           "id": "q002-r001",
-          "value": "Je viens d'arriver, je les découvre",
+          "label": "Je viens d'arriver, je les découvre",
           "tags": ["mood"]
         },
         {
           "id": "q002-r002",
-          "value": "Je commence à les connaître",
+          "label": "Je commence à les connaître",
           "tags": ["mood", "Processus"]
         },
         {
           "id": "q002-r003",
-          "value": "On se connait bien",
+          "label": "On se connait bien",
           "tags": ["Fun", "Processus", "Performance"]
         }
       ]
@@ -48,17 +48,17 @@
       "responses": [
         {
           "id": "q003-r001",
-          "value": "J'ai pas le temps",
+          "label": "J'ai pas le temps",
           "tags": ["Rapide"]
         },
         {
           "id": "q003-r002",
-          "value": "Je peux m'arranger",
+          "label": "Je peux m'arranger",
           "tags": ["Sprint", "Processus"]
         },
         {
           "id": "q003-r003",
-          "value": "Dispo!",
+          "label": "Dispo!",
           "tags": ["Fun", "Innovation"]
         }
       ]
@@ -69,17 +69,17 @@
       "responses": [
         {
           "id": "q004-r001",
-          "value": "Pas du tout",
+          "label": "Pas du tout",
           "tags": []
         },
         {
           "id": "q004-r002",
-          "value": "Un peu",
+          "label": "Un peu",
           "tags": ["Sprint", "Processus"]
         },
         {
           "id": "q004-r003",
-          "value": "Beaucoup",
+          "label": "Beaucoup",
           "tags": ["Sprint", "Processus", "Performance"]
         }
       ]
@@ -90,12 +90,12 @@
       "responses": [
         {
           "id": "q005-r001",
-          "value": "Non",
+          "label": "Non",
           "tags": []
         },
         {
           "id": "q005-r002",
-          "value": "Oui",
+          "label": "Oui",
           "tags": ["Conflits", "Processus"]
         }
       ]
@@ -106,12 +106,12 @@
       "responses": [
         {
           "id": "q006-r001",
-          "value": "Non",
+          "label": "Non",
           "tags": []
         },
         {
           "id": "q006-r002",
-          "value": "Oui",
+          "label": "Oui",
           "tags": ["mood"]
         }
       ]
@@ -122,12 +122,12 @@
       "responses": [
         {
           "id": "q007-r001",
-          "value": "Non",
+          "label": "Non",
           "tags": []
         },
         {
           "id": "q007-r002",
-          "value": "Oui",
+          "label": "Oui",
           "tags": ["mood", "Fun"]
         }
       ]
@@ -138,22 +138,22 @@
       "responses": [
         {
           "id": "q008-r001",
-          "value": "De vision",
+          "label": "De vision",
           "tags": ["Vision"]
         },
         {
           "id": "q008-r002",
-          "value": "De performances",
+          "label": "De performances",
           "tags": ["Performance"]
         },
         {
           "id": "q008-r003",
-          "value": "De livraison",
+          "label": "De livraison",
           "tags": ["Processus"]
         },
         {
           "id": "q008-r004",
-          "value": "De communication",
+          "label": "De communication",
           "tags": ["Conflits"]
         }
       ]
@@ -164,22 +164,22 @@
       "responses": [
         {
           "id": "q009-r001",
-          "value": "Engageante",
+          "label": "Engageante",
           "tags": ["mood"]
         },
         {
           "id": "q009-r002",
-          "value": "Fun",
+          "label": "Fun",
           "tags": ["Fun"]
         },
         {
           "id": "q009-r003",
-          "value": "Rapide",
+          "label": "Rapide",
           "tags": ["Performance"]
         },
         {
           "id": "q009-r004",
-          "value": "Créative",
+          "label": "Créative",
           "tags": ["Innovation"]
         }
       ]

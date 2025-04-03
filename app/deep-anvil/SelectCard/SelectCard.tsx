@@ -30,9 +30,9 @@ export default function SelectCard({ question, onSelected }: SelectCardProp) {
       <div className="font-bold border border-t-0 border-l-0 border-r-0 border-b-[#EEEEEE] pb-[20px] mb-[20px] text-center">{question.question}</div>
       <ul className={`flex flex-col gap-2 ${styles['select-card']}`}>
         {question.responses.map((response) => (
-          <li className="flex flex-row cursor-pointer w-full border border-[#EEEEEE] px-[10px] hover:bg-[#FAFAFA] text-sm" key={response.value}>
+          <li className="flex flex-row cursor-pointer w-full border border-[#EEEEEE] px-[10px] hover:bg-[#FAFAFA] text-sm" key={response.label}>
             <input className="cursor-pointer" id={response.id} type="radio" value={response.id} name={question.id} onChange={(event) => handleChange(event, response)} />
-            <label htmlFor={response.id} className="w-full py-3 ms-2 cursor-pointer block">{response.value}</label>
+            <label htmlFor={response.id} className="w-full py-3 ms-2 cursor-pointer block">{response.label}</label>
           </li>
         ))}
       </ul>
