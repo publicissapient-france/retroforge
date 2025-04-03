@@ -25,7 +25,6 @@ export default function DeepAnvilPage() {
   }
 
   function onFinishedHandler() {
-    console.log('OnFinished')
     setFlow(Flows.FINISHED)
   }
 
