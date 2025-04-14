@@ -1,3 +1,8 @@
 .select-card > li:has(input:checked) {
+
     background: #FAFAFA;
+
+    @media (prefers-color-scheme: dark) {
+        background: #444444;
+    }
 }
