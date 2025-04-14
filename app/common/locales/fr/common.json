@@ -1,5 +1,6 @@
 {
   "title": "Retroforge",
+  "description": "Construisez une rétrospective adaptée à vos besoins !",
   "hammerSwipe": {
     "title": "Mode Hammer Swipe !",
     "description": "Swippez vers la gauche ou la droite pour obtenir la retrospective la plus adaptée !"

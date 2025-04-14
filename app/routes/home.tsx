@@ -1,9 +1,11 @@
 import { NavLink } from 'react-router'
 
+import i18n from '~/i18n'
+
 export function meta() {
   return [
-    { title: 'New React Router App' },
-    { name: 'description', content: 'Welcome to React Router!' },
+    { title: i18n.t('title') },
+    { name: 'description', content: i18n.t('description') },
   ]
 }
 
