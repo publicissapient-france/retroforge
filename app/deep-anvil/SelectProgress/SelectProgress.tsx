@@ -10,11 +10,11 @@ const CARD_WIDTH_LG = 800
 
 export function SelectProgress({ progress, total }: SelectProgressProps) {
   const progressRef = useRef<HTMLDivElement>(null)
-  const width = useMotionValue(Math.floor(CARD_WIDTH_LG / total) * progress)
+  const width = useMotionValue(0)
 
   useEffect(() => {
     const elementWidth = progressRef?.current?.clientWidth ?? CARD_WIDTH_LG
-    animate(width, Math.ceil(elementWidth / total) * progress)
+    animate(width, (elementWidth / total) * progress)
   }, [progress, total])
 
   return (
