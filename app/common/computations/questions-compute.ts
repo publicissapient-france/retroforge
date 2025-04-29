@@ -1,6 +1,7 @@
 import {
   type RetrospectiveResult,
-  RetrospectiveResultType, RetrospectiveScore,
+  RetrospectiveResultType,
+  RetrospectiveScore,
   type TagsRetrospective,
 } from '~/common/types/Restrospective'
 import type { Tags } from '~/common/types/Tags'
@@ -39,7 +40,17 @@ export function computeAppropriateRetroBasedOnScoring(answers: Computation[], ta
 
   const retainedRetrospectives = scoredRetrospective.slice(0, 3)
   return {
-    type: RetrospectiveResultType.MATCHED,
+    type: computeResultType(scoredRetrospective),
     retrospectives: retainedRetrospectives.map((retro) => retro.name),
   }
+}
+
+function computeResultType(scoredRetrospectives: RetrospectiveScore[]): RetrospectiveResultType {
+  if (scoredRetrospectives.every((retrospective) => retrospective.score === 0)) {
+    return RetrospectiveResultType.NO_MATCH
+  }
+  if (scoredRetrospectives.every((retrospective) => retrospective.score === scoredRetrospectives[0].score)) {
+    return RetrospectiveResultType.NOT_PERTINENT
+  }
+  return RetrospectiveResultType.MATCHED
 }

@@ -1,4 +1,4 @@
-import { computeAppropriateRetroBasedOnScoring } from '~/common/computations/questions-compute'
+import { Computation, computeAppropriateRetroBasedOnScoring } from '~/common/computations/questions-compute'
 import { RetrospectiveResultType } from '~/common/types/Restrospective'
 
 describe('QuestionCompute', () => {
@@ -56,6 +56,44 @@ describe('QuestionCompute', () => {
     expect(result).toEqual({
       type: RetrospectiveResultType.MATCHED,
       retrospectives: ['Starfish', '4L', 'Daki' ],
+    })
+  })
+
+  it('should compute no match result', () => {
+    const answers: Computation[] = []
+    const result = computeAppropriateRetroBasedOnScoring(answers, tagsRetrospectives)
+    expect(result).toEqual({
+      type: RetrospectiveResultType.NO_MATCH,
+      retrospectives: ['Mad Sad Glad', 'Dixit', 'Start Stop Continue'],
+    })
+  })
+
+  it('should compute no pertinent result', () => {
+    const retrospectives = [
+      { 'name': 'Mad Sad Glad', 'tags': ['Conflits', 'Vision', 'Fun'] },
+      { 'name': 'Dixit', 'tags': ['Conflits', 'Vision', 'Fun'] },
+      { 'name': 'Start Stop Continue', 'tags': ['Conflits', 'Vision', 'Fun'] },
+      { 'name': 'Dark Manifesto', 'tags': ['Conflits', 'Vision', 'Fun'] },
+      { 'name': 'Vis ma vie', 'tags': ['Conflits', 'Vision', 'Fun'] },
+      { 'name': 'La carte postale du futur', 'tags': ['Conflits', 'Vision', 'Fun'] },
+    ]
+    const answers = [
+      {
+        id: 'q001',
+        question: 'Question #1',
+        response: { tags: ['Conflits', 'Vision', 'Fun'] },
+      },
+      {
+        id: 'q002',
+        question: 'Question #2',
+        response: { tags: ['Conflits', 'Vision', 'Fun'] },
+      },
+    ]
+
+    const result = computeAppropriateRetroBasedOnScoring(answers, retrospectives)
+    expect(result).toEqual({
+      type: RetrospectiveResultType.NOT_PERTINENT,
+      retrospectives: ['Mad Sad Glad', 'Dixit', 'Start Stop Continue'],
     })
   })
 })
