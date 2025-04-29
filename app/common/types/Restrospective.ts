@@ -7,6 +7,11 @@ export type TagsRetrospectives = {
   retrospectives: TagsRetrospective[]
 }
 
+export type RetrospectiveScore = {
+  name: string
+  score: number
+}
+
 export enum RetrospectiveResultType {
   NOT_PERTINENT = 'NOT_PERTINENT',
   NO_MATCH = 'NO_MATCH',

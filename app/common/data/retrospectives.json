@@ -1,40 +1,20 @@
 {
   "retrospectives": [
-    {
-      "name": "Mad Sad Glad",
-      "tags": ["Mood", "Sprint"]
-    },
-    {
-      "name": "Dixit",
-      "tags": ["Fun", "Innovation"]
-    },
-    {
-      "name": "Start Stop Continue",
-      "tags": ["Processus", "Performance"]
-    },
-    {
-      "name": "Dark Manifesto",
-      "tags": ["Conflits", "Vision"]
-    },
-    {
-      "name": "Vis ma vie",
-      "tags": ["Vision"]
-    },
-    {
-      "name": "La carte postale du futur",
-      "tags": ["Vision", "Innovation"]
-    },
-    {
-      "name": "4L",
-      "tags": ["Vision", "Innovation"]
-    },
-    {
-      "name": "Speed boat",
-      "tags": ["Vision", "Innovation"]
-    },
-    {
-      "name": "Starfish",
-      "tags": ["Processus"]
-    }
+    { "name": "Mad Sad Glad", "tags": ["Mood", "Sprint"] },
+    { "name": "Dixit", "tags": ["Fun", "Mood", "Vision"] },
+    { "name": "Start Stop Continue", "tags": ["Sprint", "Performance"] },
+    { "name": "Dark Manifesto", "tags": ["Conflits", "Vision", "Fun"] },
+    { "name": "Vis ma vie", "tags": ["Vision"] },
+    { "name": "La carte postale du futur", "tags": ["Vision", "Innovation"] },
+    { "name": "4L", "tags": ["Sprint", "Mood", "Processus"] },
+    { "name": "Speed boat", "tags": ["Vision", "Innovation"] },
+    { "name": "Starfish", "tags": ["Processus", "Mood", "Sprint", "Processus"] },
+    { "name": "La ligne de vie", "tags": ["Mood", "Sprint", "Vision"] },
+    { "name": "Dohyō Dynamique", "tags": ["Performance", "Innovation", "Fun"] },
+    { "name": "JOYEUSES PÂQUES", "tags": ["Fun","Processus", "Mood", "Innovation"] },
+    { "name": "Daki", "tags": ["Processus", "Performance"] },
+    { "name": "Les 3 petits cochon", "tags": ["Processus", "Fun"] },
+    { "name": "The Good, the Bad & the Ugly", "tags": ["Sprint", "Fun", "Performance"] },
+    { "name": "Jurassic Park", "tags": ["Innovation", "Fun", "Processus", "Conflits"] }
   ]
 }

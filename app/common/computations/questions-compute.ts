@@ -1,7 +1,6 @@
 import {
   type RetrospectiveResult,
-  RetrospectiveResultType,
-  type SuggestedRetrospective,
+  RetrospectiveResultType, RetrospectiveScore,
   type TagsRetrospective,
 } from '~/common/types/Restrospective'
 import type { Tags } from '~/common/types/Tags'
@@ -16,9 +15,8 @@ export type ResponseComputation = {
   tags: Tags
 }
 
-
-export function computeAppropriateRetro(answers: Computation[], tagsRetrospectives: TagsRetrospective[]): RetrospectiveResult {
-  const tagReduced = answers
+export function computeAppropriateRetroBasedOnScoring(answers: Computation[], tagsRetrospectives: TagsRetrospective[]): RetrospectiveResult {
+  const tagsScores = answers
     .flatMap((result) => result.response.tags)
     .reduce<Record<string, number>>((acc, tag) => {
       if (tag in acc) {
@@ -28,29 +26,20 @@ export function computeAppropriateRetro(answers: Computation[], tagsRetrospectiv
       return { ...acc, [tag]: 1 }
     }, {})
   const sorted = Object.fromEntries(
-    Object.entries(tagReduced)
+    Object.entries(tagsScores)
       .sort(([, resulta], [, resultb]) => resultb - resulta),
   )
-  const scoreValues = new Set(Object.values(sorted))
-  if (scoreValues.size === 0) {
-    return { type: RetrospectiveResultType.NO_MATCH, retrospectives: [] }
-  }
+  const scoredRetrospective: RetrospectiveScore[] = tagsRetrospectives.map(({ name, tags }) => {
+    const score = tags.reduce((acc, tag) => acc + (sorted[tag] ?? 0), 0)
+    return {
+      name,
+      score,
+    }
+  }).sort((scorea, scoreb) => scoreb.score - scorea.score)
 
-  const retainedTags = Object.keys(sorted).slice(0, 3)
-  const weightedSuggestedRetrospective = tagsRetrospectives.reduce<SuggestedRetrospective[]>((acc, tagsRetro) => {
-    const every = retainedTags.every((tag) => tagsRetro.tags.includes(tag))
-    if (every) {
-      return [...acc, { retrospective: tagsRetro.name, weight: 10 }]
-    }
-    const some = retainedTags.some((tag) => tagsRetro.tags.includes(tag))
-    if (some) {
-      return [...acc, { retrospective: tagsRetro.name, weight: 5 }]
-    }
-    return acc
-  }, [])
-  const sortedSuggestedRetrospective = weightedSuggestedRetrospective.sort((first, second) => second.weight - first.weight)
+  const retainedRetrospectives = scoredRetrospective.slice(0, 3)
   return {
-    type: scoreValues.size === 1 ? RetrospectiveResultType.NOT_PERTINENT : RetrospectiveResultType.MATCHED,
-    retrospectives: sortedSuggestedRetrospective.map((retrospective) => retrospective.retrospective),
+    type: RetrospectiveResultType.MATCHED,
+    retrospectives: retainedRetrospectives.map((retro) => retro.name),
   }
 }
