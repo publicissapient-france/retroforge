@@ -29,7 +29,7 @@ export function SelectDeck({ questions, onFinished, onSelectedResponse }: Select
   }
 
   return (
-    <div className="flex flex-col items-center justify-center gap-5">
+    <div className="flex flex-col items-center justify-center">
       <SelectProgress progress={currentIndex + 1} total={questions.length} />
       {currentQuestion !== undefined && (
         <SelectCard question={currentQuestion} onSelected={handleSelectedResponse} />

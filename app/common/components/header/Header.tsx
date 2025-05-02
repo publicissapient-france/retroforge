@@ -6,8 +6,8 @@ export default function Header() {
   const { t } = useTranslation()
 
   return (
-    <header className={`${styles.header} flex justify-center`}>
-      <h1 className="self-center">{t('title')}</h1>
+    <header className={`${styles.header} flex`}>
+      <h1 className="self-center uppercase font-bold tracking-(--title-letter-spacing)">{t('title')}</h1>
     </header>
   )
 }

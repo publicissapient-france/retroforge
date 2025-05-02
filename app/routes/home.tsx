@@ -1,5 +1,4 @@
-import { NavLink } from 'react-router'
-
+import HomeContent from '~/common/components/HomeContent/HomeContent'
 import i18n from '~/i18n'
 
 export function meta() {
@@ -11,9 +10,6 @@ export function meta() {
 
 export default function Home() {
   return (
-    <ul>
-      <li><NavLink to="/hammer-swipe">Hammer Swipe</NavLink></li>
-      <li><NavLink to="/deep-anvil">Deep Anvil</NavLink></li>
-    </ul>
+    <HomeContent />
   )
 }

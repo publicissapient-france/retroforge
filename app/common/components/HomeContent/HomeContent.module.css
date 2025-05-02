@@ -1,0 +1,47 @@
+@import '../../assets/styles/variables.css';
+
+@media screen and (max-width: 1100px) {
+    .content {
+        height: 100%;
+        display: flex;
+    }
+
+    .left {
+        align-self: center;
+        width: 100%;
+
+        & > div {
+            font-size: var(--text-6xl);
+            font-weight: bold;
+            letter-spacing: var(--title-letter-spacing);
+            line-height: 3rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .content {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-template-areas: "left right";
+    }
+
+    .left {
+        grid-area: left;
+        align-self: center;
+
+        & > div {
+            font-size: var(--text-9xl);
+            font-weight: bold;
+            letter-spacing: var(--title-letter-spacing);
+            line-height: 8rem;
+        }
+    }
+
+    .right {
+        grid-area: right;
+        align-self: center;
+    }
+}

@@ -4,7 +4,6 @@ import './i18n'
 import React from 'react'
 import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router'
 
-import Footer from '~/common/components/footer/Footer'
 import Header from '~/common/components/header/Header'
 
 import type { Route } from './+types/root'
@@ -42,12 +41,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   return (
-    <div className="layout">
-      <Header />
-      <div className="main">
-        <Outlet />
-      </div>
-      <Footer />
+    <div className="h-full">
+      <Outlet />
     </div>
   )
 }

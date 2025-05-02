@@ -1,4 +1,11 @@
 :root {
-    --header-height: 120px;
+    --header-height: 90px;
     --footer-height: 70px;
+
+    --title-letter-spacing: -0.195rem;
+
+    --accent-color: #fe414d;
+    --accent-color-hover: #ca3540;
+    --accent-color-dark: #ca3c42;
+    --accent-color-dark-hover: #95292d;
 }

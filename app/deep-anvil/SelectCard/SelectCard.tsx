@@ -25,7 +25,7 @@ export default function SelectCard({ question, onSelected }: SelectCardProp) {
       animate={{ x: 0, opacity: 1 }}
       transition={{ type: 'spring', stiffness: 75, damping: 15 }}
       style={{ x, opacity }}
-      className="rounded-[15px] lg:w-[800px] sm:w-[550px] max-sm:w-[300px] m-auto border border-[#EEEEEE] dark:bg-gray-800 box-border p-[40px] shadow-[0_2px_8px_-4px_rgba(0,0,0,0.2)] uppercase"
+      className="rounded-[15px] lg:w-[800px] sm:w-[550px] max-sm:w-[300px] m-5 border border-[#EEEEEE] bg-white dark:bg-gray-800 box-border p-[40px] shadow-[0_2px_8px_-4px_rgba(0,0,0,0.2)] uppercase"
     >
       <img className="lg:w-[256px] sm:w-[200px] max-sm:w-[128px] m-auto" src="/images/buffalo.png" alt={question.question} draggable={false} />
       <div className="lg:text-base sm:text-sm max-sm:text-xs font-bold border border-t-0 border-l-0 border-r-0 border-b-[#EEEEEE] pb-[20px] mb-[20px] text-center">{question.question}</div>

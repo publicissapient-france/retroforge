@@ -1,8 +1,8 @@
 import { animate, motion, useMotionValue, useTransform, type ValueAnimationTransition } from 'framer-motion'
 import React, { useState } from 'react'
 
+import SwipeAction from '~/common/components/SwipeAction/SwipeAction'
 import { Action, type Question } from '~/hammer-swipe/HammerSwipe'
-import SwipeAction from '~/hammer-swipe/SwipeAction/SwipeAction'
 
 const angle = 5
 
