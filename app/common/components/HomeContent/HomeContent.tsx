@@ -46,7 +46,7 @@ export default function HomeContent() {
             className="dark:bg-(--accent-color-dark) bg-(--accent-color) text-white absolute"
             rotation={-10}
             icon={<img src={confusedFace} alt="confused face" width="72" />}
-            question="L'équipe a rencontré pas mal de difficultés au dernier sprint."
+            question={t('home.redCardQuestion')}
           >
             <HomeCardAction icon={<ButtonNo className="w-[20px] h-[20px] text-white dark:text-black" />} />
             <HomeCardAction icon={<ButtonYes className="w-[25px] h-[20px] text-(--accent-color) dark:text-(--accent-color-dark)" />} />
@@ -55,7 +55,7 @@ export default function HomeContent() {
             className="bg-white dark:bg-gray-700 absolute left-[200px]"
             rotation={5}
             icon={<img src={rugbyBalloon} alt="Rugby balloon" width="72" />}
-            question="L'équipe a rencontré pas mal de difficultés au dernier sprint."
+            question={t('home.whiteCardQuestion')}
           >
             <HomeCardAction icon={<ButtonNo className="w-[20px] h-[20px] text-black dark:text-white" />} />
             <HomeCardAction icon={<ButtonYes className="w-[25px] h-[20px] text-(--accent-color) dark:text-(--accent-color-dark)" />} />

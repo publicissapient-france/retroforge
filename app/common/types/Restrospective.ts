@@ -3,6 +3,14 @@ export type TagsRetrospective = {
   tags: string[]
 }
 
+export type Retrospective = TagsRetrospective & {
+  id: string
+  filename: string
+  emoji: string
+  description: string
+}
+
+
 export type TagsRetrospectives = {
   retrospectives: TagsRetrospective[]
 }

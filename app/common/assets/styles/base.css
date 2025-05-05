@@ -5,4 +5,13 @@
     h2 {
         font-size: var(--text-3xl);
     }
+    h3 {
+        font-size: var(--text-xl);
+    }
+    h4 {
+        font-size: var(--text-lg);
+    }
+    h5 {
+        font-size: var(--text-sm);
+    }
 }

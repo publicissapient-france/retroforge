@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 
-import { Wave } from '~/common/components/Wave/Wave'
 import retrospectives from '~/common/data/retrospectives.json'
 import swipes from '~/common/data/swipes.json'
 import { Flows } from '~/common/types/Flows'
