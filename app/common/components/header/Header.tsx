@@ -7,7 +7,7 @@ export default function Header() {
 
   return (
     <header className={`${styles.header} flex`}>
-      <h1 className="self-center uppercase font-bold tracking-(--title-letter-spacing)">{t('title')}</h1>
+      <h1 className="self-center uppercase font-bold tracking-(--title-letter-spacing) text-(--accent-color) dark:text-(--accent-color-dark)">{t('title')}</h1>
     </header>
   )
 }

@@ -2,8 +2,4 @@
 
 .header {
     height: var(--header-height);
-
-    h1 {
-        color: var(--accent-color);
-    }
 }

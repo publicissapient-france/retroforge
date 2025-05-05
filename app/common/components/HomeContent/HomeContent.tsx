@@ -1,10 +1,12 @@
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { NavLink } from 'react-router'
 
 import confusedFace from '~/common/assets/images/confused-face.webp'
 import rugbyBalloon from '~/common/assets/images/rugby-balloon.webp'
-import HomeCard from '~/common/components/HomeCard/HomeCard'
+import HomeCard, { HomeCardAction } from '~/common/components/HomeCard/HomeCard'
+import { ButtonNo } from '~/common/components/Images/ButtonNo'
+import { ButtonYes } from '~/common/components/Images/ButtonYes'
 
 import styles from './HomeContent.module.css'
 
@@ -34,24 +36,30 @@ export default function HomeContent() {
       <div className={styles.left}>
         <div>{t('home.welcomeLabel')}</div>
         <nav className="pt-10 flex max-[1100px]:flex-col gap-5">
-          <NavLink to="/hammer-swipe" className="font-bold uppercase text-white bg-(--accent-color) hover:bg-(--accent-color-hover) rounded-full text-lg px-15 py-2.5 dark:bg-(--accent-color-dark) dark:hover:bg-(--accent-color-dark-hover) text-center">{t('home.start')}</NavLink>
+          <NavLink to="/hammer-swipe" className="font-bold uppercase text-white dark:text-black bg-(--accent-color) hover:bg-(--accent-color-hover) rounded-full text-lg px-15 py-2.5 dark:bg-(--accent-color-dark) dark:hover:bg-(--accent-color-dark-hover) text-center">{t('home.start')}</NavLink>
           <NavLink to="/deep-anvil" className="font-bold uppercase  text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-full text-lg px-15 py-2.5 me-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 text-center">{t('home.advanced')}</NavLink>
         </nav>
       </div>
       {!isSmall && (
         <div className={`${styles.right} relative h-full flex items-center ml-10`}>
           <HomeCard
-            className="bg-(--accent-color) text-white absolute"
+            className="dark:bg-(--accent-color-dark) bg-(--accent-color) text-white absolute"
             rotation={-10}
             icon={<img src={confusedFace} alt="confused face" width="72" />}
             question="L'équipe a rencontré pas mal de difficultés au dernier sprint."
-          />
+          >
+            <HomeCardAction icon={<ButtonNo className="w-[20px] h-[20px] text-white dark:text-black" />} />
+            <HomeCardAction icon={<ButtonYes className="w-[25px] h-[20px] text-(--accent-color) dark:text-(--accent-color-dark)" />} />
+          </HomeCard>
           <HomeCard
-            className="bg-white absolute left-[200px]"
+            className="bg-white dark:bg-gray-700 absolute left-[200px]"
             rotation={5}
             icon={<img src={rugbyBalloon} alt="Rugby balloon" width="72" />}
             question="L'équipe a rencontré pas mal de difficultés au dernier sprint."
-          />
+          >
+            <HomeCardAction icon={<ButtonNo className="w-[20px] h-[20px] text-black dark:text-white" />} />
+            <HomeCardAction icon={<ButtonYes className="w-[25px] h-[20px] text-(--accent-color) dark:text-(--accent-color-dark)" />} />
+          </HomeCard>
         </div>
       )}
     </div>

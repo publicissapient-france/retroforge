@@ -1,5 +1,5 @@
 export type FooterArrowProps = {
-  className?: string | undefined
+  className?: string
 }
 
 export function FooterArrow({ className }: FooterArrowProps) {
