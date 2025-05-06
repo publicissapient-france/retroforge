@@ -3,6 +3,8 @@ import Markdown from 'react-markdown'
 
 import { Retrospective } from '~/common/types/Restrospective'
 
+import styles from './RetrospectiveDetails.module.css'
+
 export type RetrospectiveDetailsProps = {
   retrospective: Retrospective
 }
@@ -14,7 +16,6 @@ export default function RetrospectiveDetails({ retrospective }: RetrospectiveDet
   async function getData() {
     const result = await fetch(`/retros/${retrospective.filename}`)
     const content = await result.text()
-    console.log('content', content)
     setContent(content)
     setLoading(false)
   }
@@ -28,6 +29,8 @@ export default function RetrospectiveDetails({ retrospective }: RetrospectiveDet
   }
 
   return (
-    <Markdown>{content}</Markdown>
+    <div className={styles.details}>
+      <Markdown>{content}</Markdown>
+    </div>
   )
 }

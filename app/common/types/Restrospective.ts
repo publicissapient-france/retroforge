@@ -16,7 +16,7 @@ export type TagsRetrospectives = {
 }
 
 export type RetrospectiveScore = {
-  name: string
+  retrospective: Retrospective
   score: number
 }
 
@@ -28,7 +28,7 @@ export enum RetrospectiveResultType {
 
 export type RetrospectiveResult = {
   type: RetrospectiveResultType
-  retrospectives: string[]
+  retrospectives: Retrospective[]
 }
 
 export type SuggestedRetrospective = {

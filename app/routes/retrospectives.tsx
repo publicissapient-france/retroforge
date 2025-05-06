@@ -1,3 +1,6 @@
+import { useTranslation } from 'react-i18next'
+
+import Breadcrumb from '~/common/components/Breadcrumb/Breadcrumb'
 import retrospectives from '~/common/data/retrospectives.json'
 import i18n from '~/i18n'
 import RetrospectiveListing from '~/retrospectives/RetrospectiveListing/RetrospectiveListing'
@@ -10,5 +13,13 @@ export function meta() {
 }
 
 export default function RetrospectivesPage() {
-  return <RetrospectiveListing retrospectives={retrospectives.retrospectives} />
+  const { t } = useTranslation()
+  const paths = [{ path: '/', label: t('home.title') }, { label: t('retrospectives.title') }]
+
+  return (
+    <>
+      <Breadcrumb className="mb-4" paths={paths} />
+      <RetrospectiveListing retrospectives={retrospectives.retrospectives} />
+    </>
+  )
 }

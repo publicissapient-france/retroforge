@@ -2,30 +2,50 @@
   "title": "Retroforge",
   "description": "Construisez une rétrospective adaptée à vos besoins !",
   "home": {
+    "title": "Accueil",
     "welcomeLabel": "Match ta rétro idéale.",
     "start": "Commencer",
     "advanced": "Mode avancé",
     "redCardQuestion": "L'équipe a rencontré pas mal de difficultés au dernier sprint.",
     "whiteCardQuestion": "Je maîtrise Scrum comme un chef."
   },
+  "breadcrumb": {
+    "hammer-swipe": {
+      "title": "Hammer Swipe"
+    },
+    "deep-anvil": {
+      "title": "Deep Anvil"
+    },
+    "match": {
+      "title": "Match"
+    },
+    "retrospectives": {
+      "title": "Toutes les rétrospectives"
+    }
+  },
   "hammerSwipe": {
-    "title": "Mode Hammer Swipe !",
+    "title": "Hammer Swipe",
     "description": "Swippez vers la gauche ou la droite pour obtenir la retrospective la plus adaptée !"
   },
   "deepAnvil": {
-    "title": "Mode Deep Anvil !",
+    "title": "Deep Anvil",
     "description": "Sélectionnez la réponse qui vous correspond le mieux parmis la liste pour obtenir la retrospective la plus adaptée !"
   },
   "actions": {
     "yes": "Oui",
     "no": "Non"
   },
+  "match": {
+    "title": "Match"
+  },
   "retrospectives": {
     "NOT_PERTINENT": "Nous n'avons pas réussis à trouver de retrospective pertinentes basée sur vos réponses, voici cependant une liste de rétrospective qui pourrait peut être vous être utile.",
     "NO_MATCH": "Les réponses que vous nous avez fournis, ne nous ont pas permis de trouver une rétrospective adaptée, veuillez revoir vos réponses.",
     "MATCHED": "Voici une liste de rétrospective adaptée à vos besoins",
     "title": "Toutes les rétrospectives",
-    "description": "Retrouvez toutes les retrospectives"
+    "seeAll": "Voir toutes les rétrospectives",
+    "description": "Retrouvez toutes les retrospectives",
+    "notFound": "Retrospective non existante"
   },
   "footer": {
     "whoAreWe": "Qui sommes-nous"

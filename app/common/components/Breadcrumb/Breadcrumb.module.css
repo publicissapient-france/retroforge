@@ -1,0 +1,9 @@
+.breadcrumb {
+    display: flex;
+    font-weight: bold;
+
+    & > li:not(:last-of-type)::after {
+        content: '>';
+        margin: 0 0.5rem;
+    }
+}

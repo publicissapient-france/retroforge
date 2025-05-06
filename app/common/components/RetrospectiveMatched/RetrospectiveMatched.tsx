@@ -1,22 +1,15 @@
-import { useTranslation } from 'react-i18next'
-
 import type { RetrospectiveResult } from '~/common/types/Restrospective'
+import RetrospectiveListing from '~/retrospectives/RetrospectiveListing/RetrospectiveListing'
 
 export type RetrospectiveMatchedProps = {
   matched: RetrospectiveResult
+  className?: string
 }
 
-export function RetrospectiveMatched({ matched }: RetrospectiveMatchedProps) {
-  const { t } = useTranslation()
-
+export function RetrospectiveMatched({ matched, className }: RetrospectiveMatchedProps) {
   return (
-    <>
-      <h2>{t(`retrospectives.${matched.type}`)}</h2>
-      <ul>
-        {matched.retrospectives.map((retrospective) => (
-          <li key={retrospective}>{retrospective}</li>
-        ))}
-      </ul>
-    </>
+    <div className={className}>
+      <RetrospectiveListing retrospectives={matched.retrospectives} />
+    </div>
   )
 }

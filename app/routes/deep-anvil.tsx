@@ -1,11 +1,12 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router'
 
+import { Computation, computeAppropriateRetroBasedOnScoring } from '~/common/computations/questions-compute'
+import { useRetrospectiveContext } from '~/common/context/RetrospectiveContext'
 import questions from '~/common/data/questions.json'
 import retrospectives from '~/common/data/retrospectives.json'
-import { Flows } from '~/common/types/Flows'
 import type { SelectResponse } from '~/deep-anvil/DeepAnvil'
 import { SelectDeck } from '~/deep-anvil/SelectDeck/SelectDeck'
-import { SelectResult } from '~/deep-anvil/SelectResult/SelectResult'
 import i18n from '~/i18n'
 
 export function meta() {
@@ -16,20 +17,19 @@ export function meta() {
 }
 
 export default function DeepAnvilPage() {
-  const [flow, setFlow] = useState(Flows.HOLD)
+  const { helper } = useRetrospectiveContext()
   const [answers, setAnswers] = useState<SelectResponse[]>([])
+  const navigate = useNavigate()
 
   function selectedResponseHandler(id: string, response: SelectResponse) {
     setAnswers((prev) => prev.concat(response))
-    setFlow(Flows.PROGRESS)
   }
 
   function onFinishedHandler() {
-    setFlow(Flows.FINISHED)
-  }
-
-  if (flow === Flows.FINISHED) {
-    return <SelectResult results={answers} retrospectives={retrospectives.retrospectives} />
+    const mappedResults: Computation[] = answers.map((result) => ({ id: result.id, question: result.label, response: { tags: result.tags } }))
+    const computed = computeAppropriateRetroBasedOnScoring(mappedResults, retrospectives.retrospectives)
+    helper.setResult(computed)
+    navigate('/deep-anvil/match')
   }
 
   return <SelectDeck questions={questions.questions} onFinished={onFinishedHandler} onSelectedResponse={selectedResponseHandler} />

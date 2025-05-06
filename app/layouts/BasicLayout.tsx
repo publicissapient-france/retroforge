@@ -8,7 +8,7 @@ import styles from './BasicLayout.module.css'
 export default function BasicLayout() {
   return (
     <div className={styles.layout}>
-      <Header />
+      <Header displayLogo />
       <Outlet />
     </div>
   )

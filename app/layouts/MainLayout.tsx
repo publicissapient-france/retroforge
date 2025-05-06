@@ -11,7 +11,7 @@ export default function MainLayout() {
     <div className={styles.layout}>
       <div className={styles.main}>
         <div className="p-[50px] max-[1100px]:p-[20px]">
-          <Header />
+          <Header displayLogo />
         </div>
         <div className={styles.content}>
           <Outlet />

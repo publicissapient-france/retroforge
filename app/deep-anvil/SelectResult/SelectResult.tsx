@@ -3,23 +3,18 @@ import { useMemo } from 'react'
 import { NoRetrospectiveMatch } from '~/common/components/NoRestrospectiveMatch/NoRetrospectiveMatch'
 import { RetrospectiveMatched } from '~/common/components/RetrospectiveMatched/RetrospectiveMatched'
 import { type Computation, computeAppropriateRetroBasedOnScoring } from '~/common/computations/questions-compute'
-import { RetrospectiveResultType, type TagsRetrospective } from '~/common/types/Restrospective'
+import { RetrospectiveResult, RetrospectiveResultType, type TagsRetrospective } from '~/common/types/Restrospective'
 import type { SelectResponse } from '~/deep-anvil/DeepAnvil'
 
 export type SelectResultProps = {
-  results: SelectResponse[]
-  retrospectives: TagsRetrospective[]
+  result: RetrospectiveResult
+  className?: string
 }
 
-export function SelectResult({ results, retrospectives }: SelectResultProps) {
-  const computed = useMemo(() => {
-    const mappedResults: Computation[] = results.map((result) => ({ id: result.id, question: result.label, response: { tags: result.tags } }))
-    return computeAppropriateRetroBasedOnScoring(mappedResults, retrospectives)
-  }, [results, retrospectives])
-  
-  if (computed.type === RetrospectiveResultType.NO_MATCH) {
+export function SelectResult({ result, className }: SelectResultProps) {
+  if (result.type === RetrospectiveResultType.NO_MATCH) {
     return <NoRetrospectiveMatch />
   }
 
-  return <RetrospectiveMatched matched={computed} />
+  return <RetrospectiveMatched className={className} matched={result} />
 }

@@ -1,8 +1,8 @@
 import {
+  type Retrospective,
   type RetrospectiveResult,
   RetrospectiveResultType,
   RetrospectiveScore,
-  type TagsRetrospective,
 } from '~/common/types/Restrospective'
 import type { Tags } from '~/common/types/Tags'
 
@@ -16,7 +16,7 @@ export type ResponseComputation = {
   tags: Tags
 }
 
-export function computeAppropriateRetroBasedOnScoring(answers: Computation[], tagsRetrospectives: TagsRetrospective[]): RetrospectiveResult {
+export function computeAppropriateRetroBasedOnScoring(answers: Computation[], tagsRetrospectives: Retrospective[]): RetrospectiveResult {
   const tagsScores = answers
     .flatMap((result) => result.response.tags)
     .reduce<Record<string, number>>((acc, tag) => {
@@ -30,10 +30,10 @@ export function computeAppropriateRetroBasedOnScoring(answers: Computation[], ta
     Object.entries(tagsScores)
       .sort(([, resulta], [, resultb]) => resultb - resulta),
   )
-  const scoredRetrospective: RetrospectiveScore[] = tagsRetrospectives.map(({ name, tags }) => {
-    const score = tags.reduce((acc, tag) => acc + (sorted[tag] ?? 0), 0)
+  const scoredRetrospective: RetrospectiveScore[] = tagsRetrospectives.map((retrospective) => {
+    const score = retrospective.tags.reduce((acc, tag) => acc + (sorted[tag] ?? 0), 0)
     return {
-      name,
+      retrospective,
       score,
     }
   }).sort((scorea, scoreb) => scoreb.score - scorea.score)
@@ -41,7 +41,7 @@ export function computeAppropriateRetroBasedOnScoring(answers: Computation[], ta
   const retainedRetrospectives = scoredRetrospective.slice(0, 3)
   return {
     type: computeResultType(scoredRetrospective),
-    retrospectives: retainedRetrospectives.map((retro) => retro.name),
+    retrospectives: retainedRetrospectives.map((retro) => retro.retrospective),
   }
 }
 

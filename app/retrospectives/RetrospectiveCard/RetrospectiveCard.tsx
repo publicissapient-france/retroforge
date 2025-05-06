@@ -10,7 +10,7 @@ export default function RetrospectiveCard({ retrospective }: RetrospectiveCardPr
   return (
     <motion.div
       whileHover={{ scale: 1.1 }}
-      className="flex flex-col text-center items-center rounded-4xl h-70 w-50 p-10 justify-start gap-4 shadow-2xl border-gray-100 border-[1px]"
+      className="flex flex-col text-center items-center rounded-4xl h-70 w-50 p-10 justify-start gap-4 shadow-2xl border-gray-100 border-[1px] bg-white dark:bg-gray-700"
     >
       <span className="text-4xl">{retrospective.emoji}</span>
       <h5 className="font-bold">{retrospective.name}</h5>

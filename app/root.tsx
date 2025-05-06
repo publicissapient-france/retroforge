@@ -5,6 +5,7 @@ import React from 'react'
 import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router'
 
 import Header from '~/common/components/header/Header'
+import { RetrospectiveProvider } from '~/common/context/RetrospectiveContext'
 
 import type { Route } from './+types/root'
 
@@ -42,7 +43,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
 export default function App() {
   return (
     <div className="h-full">
-      <Outlet />
+      <RetrospectiveProvider>
+        <Outlet />
+      </RetrospectiveProvider>
     </div>
   )
 }
