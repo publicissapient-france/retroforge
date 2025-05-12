@@ -15,9 +15,6 @@ export default function InGameLayout() {
   const computedPaths: BreadcrumbPath[] = useMemo(() => {
     const startingPath = { path: '/', label: t('home.title') }
     const splitedPaths = location.pathname.split('/')
-    if (splitedPaths.length !== 2) {
-      return [startingPath]
-    }
     const mode = splitedPaths[1]
     const modePath = { label: t(`breadcrumb.${mode}.title`) }
     return [startingPath, modePath]
