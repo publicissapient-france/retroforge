@@ -32,8 +32,8 @@ export default function HammerSwipeMatchPage() {
 
   return (
     <>
-      <Breadcrumb className="z-2 fixed pl-[50px] mt-[calc(50px_+_var(--header-height))] max-[1100px]:p-[20px] max-[1100px]:mt-(--header-height)" paths={paths} />
-      {state.result && <SwipeResult className="flex gap-5" result={state.result} />}
+      <Breadcrumb paths={paths} />
+      {state.result && <SwipeResult className="flex gap-5 justify-center" result={state.result} />}
     </>
   )
 }

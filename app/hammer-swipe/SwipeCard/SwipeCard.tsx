@@ -38,7 +38,7 @@ export default function SwipeCard({ card, onRemove, index }: SwipeCardProps) {
 
   return (
     <motion.div
-      initial={{ y: -1000, rotate: initialRotation, opacity: 1 }} // Drop from the top
+      initial={{ y: -1500, rotate: initialRotation, opacity: 1 }} // Drop from the top
       animate={{ y: 0, opacity: 1 }} // Drop down animation
       transition={{ type: 'spring', stiffness: 75, damping: 15, delay: index * 0.1 }} // Staggered effect
       drag="x"
