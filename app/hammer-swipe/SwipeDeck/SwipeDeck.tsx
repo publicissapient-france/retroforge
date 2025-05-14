@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect,useState } from 'react'
 
 import { Action, type Question } from '~/hammer-swipe/HammerSwipe'
 import SwipeCard from '~/hammer-swipe/SwipeCard/SwipeCard'
@@ -12,7 +12,12 @@ type SwipeDeckProps = {
 }
 
 export default function SwipeDeck({ questions, onQuestionAccepted, onFinished }: SwipeDeckProps) {
+  const [clientSide, setClientSide] = useState(false)
   const [cardStack, setCardStack] = useState(questions)
+
+  useEffect(() => {
+    setClientSide(true)
+  }, [])
 
   const removeCard = (question: Question, action: Action) => {
     setCardStack((prev) => prev.filter((card) => card.id !== question.id))
@@ -25,12 +30,14 @@ export default function SwipeDeck({ questions, onQuestionAccepted, onFinished }:
   }
 
   return (
-    <section className={styles.deck}>
-      <div>
-        {cardStack.map((card, index) => (
-          <SwipeCard key={card.id} card={card} onRemove={removeCard} index={index} />
-        ))}
-      </div>
-    </section>
+    clientSide && (
+      <section className={styles.deck}>
+        <div>
+          {cardStack.map((card, index) => (
+            <SwipeCard key={card.id} card={card} onRemove={removeCard} index={index} />
+          ))}
+        </div>
+      </section>
+    )
   )
 }

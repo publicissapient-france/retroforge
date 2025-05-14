@@ -42,6 +42,7 @@
     "NOT_PERTINENT": "Nous n'avons pas réussis à trouver de retrospective pertinentes basée sur vos réponses, voici cependant une liste de rétrospective qui pourrait peut être vous être utile.",
     "NO_MATCH": "Les réponses que vous nous avez fournis, ne nous ont pas permis de trouver une rétrospective adaptée, veuillez revoir vos réponses.",
     "MATCHED": "Voici une liste de rétrospective adaptée à vos besoins",
+    "canMatch": "Ces retrospectives pourraient également vous intéressées",
     "title": "Toutes les rétrospectives",
     "seeAll": "Voir toutes les rétrospectives",
     "description": "Retrouvez toutes les retrospectives",

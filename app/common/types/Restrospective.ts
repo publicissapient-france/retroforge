@@ -26,9 +26,16 @@ export enum RetrospectiveResultType {
   MATCHED = 'MATCHED',
 }
 
+export type RetrospectiveResultPodium = {
+  gold: Retrospective
+  silver: Retrospective
+  bronze: Retrospective
+}
+
 export type RetrospectiveResult = {
   type: RetrospectiveResultType
-  retrospectives: Retrospective[]
+  podium?: RetrospectiveResultPodium
+  additional: Retrospective[]
 }
 
 export type SuggestedRetrospective = {

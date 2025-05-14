@@ -31,7 +31,7 @@
     > div {
         position: absolute;
         width: 100%;
-        top: var(--header-height);
+        top: calc(var(--header-height) + var(--content-offset));
         bottom: var(--footer-height);
         will-change: transform;
         display: flex;

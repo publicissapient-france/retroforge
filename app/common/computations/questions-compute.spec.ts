@@ -1,5 +1,5 @@
 import { Computation, computeAppropriateRetroBasedOnScoring } from '~/common/computations/questions-compute'
-import { RetrospectiveResultType } from '~/common/types/Restrospective'
+import { Retrospective,RetrospectiveResultType } from '~/common/types/Restrospective'
 
 describe('QuestionCompute', () => {
 
@@ -133,6 +133,9 @@ describe('QuestionCompute', () => {
       'tags': ['Innovation', 'Fun', 'Processus', 'Conflits'],
     },
   ]
+  const retrospectiveDict = tagsRetrospectives.reduce<Record<string, Retrospective>>((acc, retro) => {
+    return { ...acc, [retro.id]: retro }
+  }, {})
 
   it('should compute best retro based on scoring', () => {
     const answers = [
@@ -167,31 +170,18 @@ describe('QuestionCompute', () => {
 
     expect(result).toEqual({
       type: RetrospectiveResultType.MATCHED,
-      retrospectives: [
-        {
-          'id': 'starfish',
-          'name': 'Starfish',
-          'filename':  'Starfish.md',
-          'emoji': '😃',
-          'description': 'Explorez ce qu’il faut continuer, arrêter ou tester avec une approche structurée pour relancer l’engagement et clarifier les axes d’amélioration.',
-          'tags': ['Processus', 'Mood', 'Sprint', 'Processus'],
-        },
-        {
-          'id': '4l',
-          'name': '4L',
-          'filename':  '4L.md',
-          'emoji': '😃',
-          'description': 'La rétrospective 4L aide l’équipe à analyser le sprint via 4 axes (Liked, Learned, Lacked, Longed For) et à définir des actions concrètes.',
-          'tags': ['Sprint', 'Mood', 'Processus'],
-        },
-        {
-          'id': 'daki',
-          'name': 'Daki',
-          'filename':  'DAKI.md',
-          'emoji': '😃',
-          'description': 'identifiez ce qu’il faut arrêter, garder, améliorer ou tester pour structurer l’amélioration continue de l’équipe.',
-          'tags': ['Processus', 'Performance'],
-        },
+      podium: {
+        gold: retrospectiveDict['starfish'],
+        silver: retrospectiveDict['4l'],
+        bronze: retrospectiveDict['daki'],
+      },
+      additional: [
+        retrospectiveDict['jurassic-park'],
+        retrospectiveDict['joyeuses-paques'],
+        retrospectiveDict['petits-cochons'],
+        retrospectiveDict['good-bad-ugly'],
+        retrospectiveDict['start-stop-continue'],
+        retrospectiveDict['dohyo-dynamique'],
       ],
     })
   })
@@ -201,32 +191,12 @@ describe('QuestionCompute', () => {
     const result = computeAppropriateRetroBasedOnScoring(answers, tagsRetrospectives)
     expect(result).toEqual({
       type: RetrospectiveResultType.NO_MATCH,
-      retrospectives: [
-        {
-          'id': 'mad-sad-glad',
-          'name': 'Mad Sad Glad',
-          'filename':  'Mad-Sad-Glad.md',
-          'emoji': '😑',
-          'description': 'Exprimez les émotions vécues durant le sprint (colère, tristesse, joie) pour mieux comprendre et renforcer la dynamique d’équipe.',
-          'tags': ['Mood', 'Sprint'],
-        },
-        {
-          'id': 'dixit',
-          'name': 'Dixit',
-          'filename': 'Dixit.md',
-          'emoji': '😃',
-          'description': 'utilisez des cartes imagées pour explorer les ressentis, libérer la parole et renforcer l’écoute active au sein de l’équipe.',
-          'tags': ['Fun', 'Mood', 'Vision'],
-        },
-        {
-          'id': 'start-stop-continue',
-          'name': 'Start Stop Continue',
-          'filename':  'Start-Stop-Continue.md',
-          'emoji': '😃',
-          'description': 'Identifiez ce qu’il faut commencer, arrêter ou poursuivre pour affiner les pratiques de l’équipe dans une dynamique simple d’amélioration continue.',
-          'tags': ['Sprint', 'Performance'],
-        },
-      ],
+      podium: {
+        gold: retrospectiveDict['mad-sad-glad'],
+        silver: retrospectiveDict['dixit'],
+        bronze: retrospectiveDict['start-stop-continue'],
+      },
+      additional: [],
     })
   })
 
@@ -255,11 +225,12 @@ describe('QuestionCompute', () => {
     const result = computeAppropriateRetroBasedOnScoring(answers, retrospectives)
     expect(result).toEqual({
       type: RetrospectiveResultType.NOT_PERTINENT,
-      retrospectives: [
-        { id: '', description:'', emoji: '', filename: '', name: 'Mad Sad Glad', 'tags': ['Conflits', 'Vision', 'Fun'] },
-        { id: '', description:'', emoji: '', filename: '', name: 'Dixit', 'tags': ['Conflits', 'Vision', 'Fun'] },
-        { id: '', description:'', emoji: '', filename: '', name: 'Start Stop Continue', 'tags': ['Conflits', 'Vision', 'Fun'] },
-      ],
+      podium: {
+        gold: { id: '', description:'', emoji: '', filename: '', name: 'Mad Sad Glad', 'tags': ['Conflits', 'Vision', 'Fun'] },
+        silver: { id: '', description:'', emoji: '', filename: '', name: 'Dixit', 'tags': ['Conflits', 'Vision', 'Fun'] },
+        bronze: { id: '', description:'', emoji: '', filename: '', name: 'Start Stop Continue', 'tags': ['Conflits', 'Vision', 'Fun'] },
+      },
+      additional: [],
     })
   })
 })

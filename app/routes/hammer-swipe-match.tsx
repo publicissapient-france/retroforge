@@ -33,7 +33,7 @@ export default function HammerSwipeMatchPage() {
   return (
     <>
       <Breadcrumb paths={paths} />
-      {state.result && <SwipeResult className="flex gap-5 justify-center" result={state.result} />}
+      {state.result && <SwipeResult className="flex flex-col gap-10 items-center" result={state.result} />}
     </>
   )
 }

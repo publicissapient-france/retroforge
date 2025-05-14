@@ -1,6 +1,7 @@
 import {
   type Retrospective,
   type RetrospectiveResult,
+  RetrospectiveResultPodium,
   RetrospectiveResultType,
   RetrospectiveScore,
 } from '~/common/types/Restrospective'
@@ -39,10 +40,26 @@ export function computeAppropriateRetroBasedOnScoring(answers: Computation[], ta
   }).sort((scorea, scoreb) => scoreb.score - scorea.score)
 
   const retainedRetrospectives = scoredRetrospective.slice(0, 3)
+  const otherRetrospectives = scoredRetrospective.slice(3, 9)
+  const resultType = computeResultType(scoredRetrospective)
   return {
-    type: computeResultType(scoredRetrospective),
-    retrospectives: retainedRetrospectives.map((retro) => retro.retrospective),
+    type: resultType,
+    podium: extractPodium(retainedRetrospectives),
+    additional: resultType === RetrospectiveResultType.MATCHED ? otherRetrospectives.map((retro) => retro.retrospective) : [],
   }
+}
+
+function extractPodium(retainedRetrospectives: RetrospectiveScore[]): RetrospectiveResultPodium | undefined {
+  if (retainedRetrospectives.length === 3) {
+    const mappedRetrospective = retainedRetrospectives.map((retro) => retro.retrospective)
+    return {
+      gold: mappedRetrospective[0],
+      silver: mappedRetrospective[1],
+      bronze: mappedRetrospective[2],
+    }
+  }
+
+  return undefined
 }
 
 function computeResultType(scoredRetrospectives: RetrospectiveScore[]): RetrospectiveResultType {

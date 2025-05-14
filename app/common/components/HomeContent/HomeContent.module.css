@@ -11,7 +11,7 @@
         width: 100%;
 
         & > div {
-            font-size: var(--text-6xl);
+            font-size: var(--text-5xl);
             font-weight: bold;
             letter-spacing: var(--title-letter-spacing);
             line-height: 3rem;
