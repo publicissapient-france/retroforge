@@ -66,7 +66,7 @@ export default function SwipeCard({ card, onRemove, index }: SwipeCardProps) {
       }}
       className="flex flex-col absolute max-md:w-[300px] md:w-[336px] items-center justify-between max-md:h-90 md:h-125 overflow-hidden box-border p-[30px] shadow-[0_2px_8px_-4px_rgba(0,0,0,0.2)] rounded-[15px] border border-[#EEEEEE] bg-white dark:bg-gray-800 text-center will-change-transform"
     >
-      <img className="max-md:w-36 lg:w-60" src={`/images/${card.id}.png`} alt={card.question} draggable={false} width={200} height={200} />
+      <img className="max-md:w-36 lg:w-60" src={`/images/swipes/${card.id}.png`} alt={card.question} draggable={false} width={200} height={200} />
       <p className="uppercase max-md:text-[12px] md:text-[14px] min-h-[54px] max-md:leading-[14px] md:leading-[18px]">{card.question}</p>
       <div className="flex w-full justify-between px-2">
         <SwipeAction type={Action.NO} onClick={onActionPerformed} />

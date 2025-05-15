@@ -35,7 +35,7 @@ export default function RetrospectiveCard({ retrospective, icon, size = 'medium'
       whileHover={{ scale: 1.1 }}
       className={`${sizeClasses} ${colorClasses} relative flex flex-col text-center items-center justify-start`}
     >
-      {icon && <span className="absolute top-0 text-2xl">{icon}</span>}
+      {icon && <span className="absolute top-[-15px] text-4xl">{icon}</span>}
       <span className="text-4xl">{retrospective.emoji}</span>
       <h5 className="font-bold">{retrospective.name}</h5>
       <p className="text-xs">{retrospective.description}</p>
