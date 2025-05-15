@@ -24,9 +24,9 @@ Vision, Innovation
 
 ---
 
-# 🧭 3. Navigation par étapes
+# 🧭 Navigation par étapes
 
-## ✅ 3.1 Phase de préparation
+## ✅ Phase de préparation
 Créer un **support visuel** avec :
 - 🛥️ **Bateau** : représente l'équipe ou le sprint.
 - 🏝️ **Île** : les objectifs ou la vision à atteindre.
@@ -38,7 +38,7 @@ Créer un **support visuel** avec :
 
 ---
 
-## ⏱️ 3.2 Déroulé détaillé
+## ⏱️ Déroulé détaillé
 
 ### Phase 1 : Remplissage des catégories (10 min)
 - Chaque participant écrit **3 post-its maximum par catégorie** (vents, ancres, risques, etc.).
@@ -56,14 +56,14 @@ Créer un **support visuel** avec :
 
 ---
 
-## 🎯 3.3 Actions & Outputs
+## 🎯 Actions & Outputs
 - Une **liste claire des risques** et des leviers d'amélioration pour les prochains sprints.
 - Un **échange transparent** sur la situation actuelle et future.
 - **Un engagement collectif** autour des solutions décidées.
 
 ---
 
-# 🎁 4. Notre petit truc en plus
+# 🎁 Notre petit truc en plus
 - Proposez d’écrire la **carte postale** sous forme de **message à l'équipe du futur**.
 - **Illustrez** le support visuel pour rendre la session plus engageante.
 - **Adaptez la métaphore** : si l'équipe préfère, vous pouvez utiliser un **speed car** ou tout autre véhicule rapide à la place du bateau.

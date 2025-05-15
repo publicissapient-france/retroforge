@@ -25,9 +25,9 @@ Fun, Processus, Mood, Innovation
 
 ---
 
-# 🧭 3. Navigation par étapes
+# 🧭 Navigation par étapes
 
-## ✅ 3.1 Phase de préparation
+## ✅ Phase de préparation
 - Créer ou préparer des **œufs** numériques (Miro) ou physiques contenant :
   - Des **questions** ouvertes sur les améliorations à apporter.
 - Créer des **paniers de priorités** sur le tableau :
@@ -42,7 +42,7 @@ Fun, Processus, Mood, Innovation
 
 ---
 
-## ⏱️ 3.2 Déroulé détaillé
+## ⏱️ Déroulé détaillé
 
 ### Phase 1 : Introduction (5 min)
 - Présentation rapide du thème et des objectifs de la session.
@@ -61,14 +61,14 @@ Fun, Processus, Mood, Innovation
 
 ---
 
-## 🎯 3.3 Actions & Outputs
+## 🎯 Actions & Outputs
 - **Liste claire et priorisée** des actions à mener.
 - **Rapport exportable** sous forme graphique ou de plan d'action.
 - **Alignement de l'équipe** sur les priorités immédiates.
 
 ---
 
-# 🎁 4. Notre petit truc en plus
+# 🎁 Notre petit truc en plus
 - Distribuer des **chocolats** en fonction des réponses (plus une question est difficile, plus la récompense est grande 🍫).
 - Ajouter des **papiers dorés bonus** : lorsqu'un participant propose une super idée, faites sonner une **cloche** ou autre signal festif 🎉.
 - Terminer sur une note légère pour renforcer la dynamique positive.

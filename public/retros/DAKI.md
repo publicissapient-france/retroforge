@@ -24,9 +24,9 @@ Processus, Performance
 
 ---
 
-# 🧭 3. Navigation par étapes
+# 🧭 Navigation par étapes
 
-## ✅ 3.1 Phase de préparation
+## ✅ Phase de préparation
 - Créer un espace avec 4 colonnes distinctes :
   - 🔴 **Drop** : Ce qu'on doit arrêter.
   - 🟢 **Add** : Nouveautés à tester ou intégrer.
@@ -35,7 +35,7 @@ Processus, Performance
 
 ---
 
-## ⏱️ 3.2 Déroulé détaillé
+## ⏱️ Déroulé détaillé
 
 ### Phase 1 : Introduction (5 min)
 - Présenter l’objectif de la session.
@@ -58,14 +58,14 @@ Processus, Performance
 
 ---
 
-## 🎯 3.3 Actions & Outputs
+## 🎯 Actions & Outputs
 - **Vision claire** des pratiques à conserver, changer ou tester.
 - **Engagement de l’équipe** sur des actions concrètes.
 - Un moment de **prise de recul structuré**, adapté aux contextes calmes ou modérés.
 
 ---
 
-# 🎁 4. Notre petit truc en plus
+# 🎁 Notre petit truc en plus
 - Ajoutez une touche **métaphorique** : imaginez la rétro comme un **jardin** :
   - On **arrache** (Drop),
   - On **plante** (Add),

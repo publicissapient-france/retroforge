@@ -24,9 +24,9 @@ Fun, Processus
 
 ---
 
-# 🧭 3. Navigation par étapes
+# 🧭 Navigation par étapes
 
-## ✅ 3.1 Phase de préparation
+## ✅ Phase de préparation
 - Préparer un tableau avec 3 colonnes :
   - 🟡 **Maison de paille** : Pratiques fragiles, à risque d’effondrement.
   - 🟠 **Maison de bois** : Moyennement solides, mais perfectibles.
@@ -34,7 +34,7 @@ Fun, Processus
 
 ---
 
-## ⏱️ 3.2 Déroulé détaillé
+## ⏱️ Déroulé détaillé
 
 ### Phase 1 : Introduction (5 min)
 - Présenter la métaphore du conte.
@@ -58,14 +58,14 @@ Fun, Processus
 
 ---
 
-## 🎯 3.3 Actions & Outputs
+## 🎯 Actions & Outputs
 - Une **liste d’actions concrètes** pour améliorer ou renforcer les processus existants.
 - Une meilleure **prise de conscience** des bonnes pratiques déjà en place.
 - Un sentiment d’**équipe valorisée** pour ce qui fonctionne bien.
 
 ---
 
-# 🎁 4. Le petit truc en plus
+# 🎁 Le petit truc en plus
 - Intégrer le **loup** 🐺 dans l’atelier : représente les **menaces ou risques** qui planent sur les pratiques fragiles.
 - Proposer de **refaire la rétro quelques sprints plus tard** pour voir si les maisons ont évolué.
 - Ajoutez une touche visuelle forte pour renforcer la métaphore (dessins, icônes de maison, etc.).

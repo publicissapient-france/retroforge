@@ -27,9 +27,9 @@
     {
       "id": "dark-manifesto",
       "name": "Dark Manifesto",
-      "filename":  "Not-Implemented.md",
+      "filename":  "Dark-Manifesto.md",
       "emoji": "💣",
-      "description": "Cette retrospective n'est pas encore accéssible, elle le sera bientôt.",
+      "description": "Identifiez les pires travers de l'équipe avec humour noir pour révéler les risques majeurs et bâtir un plan d'action concret et salvateur.",
       "tags": ["Conflits", "Vision", "Fun"]
     },
     {
@@ -43,9 +43,9 @@
     {
       "id": "carte-postale-futur",
       "name": "La carte postale du futur",
-      "filename":  "Not-Implemented.md",
+      "filename":  "carte-du-futur.md",
       "emoji": "🌅",
-      "description": "Cette retrospective n'est pas encore accéssible, elle le sera bientôt.",
+      "description": "Projetez-vous à la fin du projet en écrivant une carte postale du futur pour aligner l’équipe sur une vision partagée et des actions concrètes.",
       "tags": ["Vision", "Innovation"]
     },
     {

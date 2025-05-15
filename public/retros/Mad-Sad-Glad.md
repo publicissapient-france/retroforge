@@ -23,9 +23,9 @@ Permet d'ouvrir un espace d’expression des émotions, positives ou négatives,
 
 ---
 
-# 🧭 3. Navigation par étapes
+# 🧭 Navigation par étapes
 
-## ✅ 3.1 Phase de préparation
+## ✅ Phase de préparation
 - Préparer trois colonnes :
   - 😀 **Glad** (Post-it vert) : Ce qui vous a plu
   - ☹️ **Sad** (Post-it orange) : Ce qui vous a déplu
@@ -33,7 +33,7 @@ Permet d'ouvrir un espace d’expression des émotions, positives ou négatives,
 
 ---
 
-## ⏱️ 3.2 Déroulé détaillé
+## ⏱️ Déroulé détaillé
 
 ### Phase 1 : Ice breaker express (5 min)
 - Demandez à chaque participant de décrire l’itération écoulée en **un mot**.
@@ -57,14 +57,14 @@ Permet d'ouvrir un espace d’expression des émotions, positives ou négatives,
 
 ---
 
-## 🎯 3.3 Actions & Outputs
+## 🎯 Actions & Outputs
 - L’équipe exprime et partage ses ressentis.
 - Identification des **points forts et irritants** du sprint.
 - Mise en place d’**actions concrètes** pour renforcer la dynamique collective.
 
 ---
 
-# 🎁 4. Notre petit truc en plus
+# 🎁 Notre petit truc en plus
 - Ajoutez des colonnes supplémentaires :
   - 💡 **Idées** : Propositions d'amélioration.
   - 🙏 **Merci** : Remerciements entre membres.

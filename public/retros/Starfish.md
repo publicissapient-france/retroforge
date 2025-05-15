@@ -24,9 +24,9 @@ Conflits, Mood, Sprint, Processus
 
 ---
 
-# 🧭 3. Navigation par étapes
+# 🧭 Navigation par étapes
 
-## ✅ 3.1 Phase de préparation
+## ✅ Phase de préparation
 - Créer un tableau avec 5 colonnes colorées :
   - **Continuer** (turquoise) : Ce qui fonctionne et doit être conservé.
   - **Plus** (vert) : Ce qui fonctionne et pourrait être amplifié.
@@ -42,7 +42,7 @@ Conflits, Mood, Sprint, Processus
 
 ---
 
-## ⏱️ 3.2 Déroulé détaillé
+## ⏱️ Déroulé détaillé
 
 ### Phase 1 : Introduction (5 min)
 - Présenter l’objectif de la rétro et rappeler les règles de bienveillance.
@@ -70,14 +70,14 @@ Conflits, Mood, Sprint, Processus
 
 ---
 
-## 🎯 3.3 Actions & Outputs
+## 🎯 Actions & Outputs
 - **Liste priorisée** d’actions concrètes à entreprendre.
 - **Clarté** sur ce qu’il faut continuer, amplifier, réduire, arrêter ou tester.
 - **Engagement collectif** renforcé autour des décisions.
 
 ---
 
-# 🎁 4. Notre petit truc en plus
+# 🎁 Notre petit truc en plus
 - **Commencer par les aspects positifs** ("Continuer", "Plus") pour instaurer une dynamique encourageante dès le début.
 - **Terminer également sur du positif** pour laisser une impression motivante.
 - Personnalisez le visuel : pourquoi ne pas faire un Starfish en vrai dessin d’étoile pour donner plus de fun et d’originalité ?

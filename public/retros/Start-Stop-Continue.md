@@ -24,9 +24,9 @@ Sprint, Performance
 
 ---
 
-# 🧭 3. Navigation par étapes
+# 🧭 Navigation par étapes
 
-## ✅ 3.1 Phase de préparation
+## ✅ Phase de préparation
 - Tracer trois colonnes sur le tableau ou l’outil collaboratif :
   - 🟢 Start : Ce que nous devrions commencer à faire.
   - 🔴 Stop : Ce que nous devrions arrêter.
@@ -34,7 +34,7 @@ Sprint, Performance
 
 ---
 
-## ⏱️ 3.2 Déroulé détaillé
+## ⏱️ Déroulé détaillé
 
 ### Phase 1 : Brainstorming individuel (5-10 min)
 - Chaque participant note ses idées sur des post-its (ou dans l'outil digital).
@@ -56,14 +56,14 @@ Sprint, Performance
 
 ---
 
-## 🎯 3.3 Actions & Outputs
+## 🎯 Actions & Outputs
 - Une **liste d'actions claires et réalisables** pour le prochain sprint.
 - Une **vision partagée** des pratiques à conserver, améliorer ou abandonner.
 - **Un engagement collectif** renforcé autour des améliorations décidées.
 
 ---
 
-# 🎁 4. Notre petit truc en plus
+# 🎁 Notre petit truc en plus
 - Demandez aux participants de formuler les items "Start" comme des **expérimentations** : cela libère la créativité.
 - Valorisez la colonne "Continue" pour **célébrer** les bonnes pratiques existantes.
 - Fixez un **suivi précis** au sprint suivant pour vérifier l'application des actions décidées.

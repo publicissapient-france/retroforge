@@ -28,9 +28,9 @@ Fun, Collaboration, Processus, Conflits
 
 ---
 
-# 🧭 3. Navigation par étapes
+# 🧭 Navigation par étapes
 
-## ✅ 3.1 Phase de préparation
+## ✅ Phase de préparation
 - Afficher ou imprimer la **carte d’Isla Nublar**
 - Préparer deux canevas :
   - Canevas "Faits" avec 4 enclos :
@@ -49,7 +49,7 @@ Fun, Collaboration, Processus, Conflits
 
 ---
 
-## ⏱️ 3.2 Déroulé détaillé
+## ⏱️ Déroulé détaillé
 
 ### Phase 1 : Introduction & mise en place (10 min)
 - Contexte : "Isla Nublar est frappée par un cyclone..."
@@ -87,7 +87,7 @@ Fun, Collaboration, Processus, Conflits
 
 ---
 
-## 🎯 3.3 Actions & Outputs
+## 🎯 Actions & Outputs
 - 3 problèmes identifiés et priorisés
 - Des solutions **créatives et variées**
 - 3 actions concrètes sélectionnées et prêtes à l’emploi
@@ -95,7 +95,7 @@ Fun, Collaboration, Processus, Conflits
 
 ---
 
-# 🎁 4. Le petit truc en plus
+# 🎁 Le petit truc en plus
 - Imprimez des **badges personnalisés**
 - Lancez le **thème musical Jurassic Park** au début
 - Faites un **quizz pour deviner les personnages**

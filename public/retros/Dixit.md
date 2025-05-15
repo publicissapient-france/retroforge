@@ -24,15 +24,15 @@ Utile si tu ressens que l’équipe a tendance à interpréter à la place de s�
 
 ---
 
-# 🧭 3. Navigation par étapes
+# 🧭 Navigation par étapes
 
-## ✅ 3.1 Phase de préparation
+## ✅ Phase de préparation
 - Avoir les cartes Dixit disponibles (5 cartes par personne en moyenne, soit environ 50 cartes).
 - Disposer toutes les cartes face visible sur la table ou dans un espace virtuel.
 
 ---
 
-## ⏱️ 3.2 Déroulé détaillé
+## ⏱️ Déroulé détaillé
 
 ### Phase 1 : Introduction (5 min)
 - Présenter le déroulé, les règles, et l’objectif de la rétrospective.
@@ -58,14 +58,14 @@ Utile si tu ressens que l’équipe a tendance à interpréter à la place de s�
 
 ---
 
-## 🎯 3.3 Actions & Outputs
+## 🎯 Actions & Outputs
 - Prise de conscience de la **diversité des interprétations** dans l'équipe.
 - Amélioration de **l'écoute active** et réduction des **conclusions hâtives**.
 - Définition d’**actions concrètes** pour renforcer la communication.
 
 ---
 
-# 🎁 4. Notre petit truc en plus
+# 🎁 Notre petit truc en plus
 - Donnez un **exemple concret** d'interprétation d'une carte pour détendre l’ambiance.
 - Incitez à **libérer la créativité** : toutes les interprétations sont valables.
 - Faites une **mindmap** colorée des thèmes évoqués pour une synthèse visuelle.

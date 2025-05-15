@@ -26,9 +26,9 @@ Performance, Collaboration, Innovation, Fun
 
 ---
 
-# 🧭 3. Navigation par étapes
+# 🧭 Navigation par étapes
 
-## ✅ 3.1 Phase de préparation
+## ✅ Phase de préparation
 - Créer un **grand cercle (dohyō)** divisé en 4 sections :
   - **Ce qui nous donne de la force** (post-its verts)
   - **Ce qui nous déséquilibre** (post-its violets)
@@ -40,7 +40,7 @@ Performance, Collaboration, Innovation, Fun
 
 ---
 
-## ⏱️ 3.2 Déroulé détaillé
+## ⏱️ Déroulé détaillé
 
 ### Phase 1 : Cérémonie d'ouverture (10 min)
 - Présenter le thème, expliquer les règles.
@@ -72,14 +72,14 @@ Performance, Collaboration, Innovation, Fun
 
 ---
 
-## 🎯 3.3 Actions & Outputs
+## 🎯 Actions & Outputs
 - **Plan d'action SMART** avec responsables et échéances.
 - **Photo** du dohyō final pour documenter le sprint.
 - **Rituel de suivi** au daily suivant pour vérifier l'avancement des actions.
 
 ---
 
-# 🎁 4. Notre petit truc en plus
+# 🎁 Notre petit truc en plus
 - Préparer un **lexique de sumo** pour l’ambiance : [Glossaire Sumo](https://en.wikipedia.org/wiki/Glossary_of_sumo_terms).
 - Créer une **checklist Yokozuna** avant la session :
   - [ ] Cercle de dohyō prêt
