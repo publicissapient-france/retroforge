@@ -33,7 +33,7 @@ export default function DeepAnvilMatchPage() {
   return (
     <>
       <Breadcrumb paths={paths} />
-      {state.result && <SelectResult className="flex flex-col gap-10 items-center" result={state.result} />}
+      {state.result && <SelectResult className="flex flex-col gap-10 items-center mt-10" result={state.result} />}
     </>
   )
 }

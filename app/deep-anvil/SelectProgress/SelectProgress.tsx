@@ -23,9 +23,9 @@ export function SelectProgress({ progress, total }: SelectProgressProps) {
       className="lg:w-[800px] sm:w-[550px] max-sm:w-[360px] mb-5"
     >
       <div className="relative">
-        <div className="absolute w-full h-5 rounded-lg bg-blue-400" />
+        <div className="absolute w-full h-5 rounded-lg bg-(--accent-color-bg)" />
         <motion.div
-          className="absolute h-5 bg-blue-700 rounded-lg"
+          className="absolute h-5 bg-(--accent-color-hover) rounded-lg"
           style={{ width }}
         />
         <div className="absolute flex h-5 justify-center items-center text-xs font-bold text-center w-full text-white">{progress} / {total}</div>

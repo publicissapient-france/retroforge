@@ -75,9 +75,9 @@
     {
       "id": "ligne-vie",
       "name": "La ligne de vie",
-      "filename":  "Not-Implemented.md",
+      "filename":  "La-ligne-de-vie.md",
       "emoji": "🖐️",
-      "description": "Cette retrospective n'est pas encore accéssible, elle le sera bientôt.",
+      "description": "Prenez du recul sur plusieurs sprints en retraçant les hauts et les bas pour identifier ensemble les forces à mobiliser à l’avenir.",
       "tags": ["Mood", "Sprint", "Vision"]
     },
     {
