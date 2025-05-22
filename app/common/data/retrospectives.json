@@ -115,10 +115,10 @@
     {
       "id": "good-bad-ugly",
       "name": "The Good, the Bad & the Ugly",
-      "filename":  "Not-Implemented.md",
+      "filename":  "TheGood-theBad-theUgly.md",
       "emoji": "🎭",
-      "description": "Cette retrospective n'est pas encore accéssible, elle le sera bientôt.",
-      "tags": ["Sprint", "Fun", "Performance"]
+      "description": "Identifiez rapidement le bon, le mauvais et le très mauvais du sprint pour en tirer des actions concrètes dans un format fun et structuré.",
+      "tags": ["Processus", "Fun"]
     },
     {
       "id": "jurassic-park",
