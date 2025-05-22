@@ -35,10 +35,10 @@
     {
       "id": "vis-ma-vie",
       "name": "Vis ma vie",
-      "filename":  "Not-Implemented.md",
+      "filename":  "Vis-ma-Vie.md",
       "emoji": "🤓",
-      "description": "Cette retrospective n'est pas encore accéssible, elle le sera bientôt.",
-      "tags": ["Vision"]
+      "description": "Favorise l’empathie en invitant chaque membre à vivre le rôle d’un autre pour lever malentendus et mieux comprendre les responsabilités.",
+      "tags": ["Vision", "Mood"]
     },
     {
       "id": "carte-postale-futur",
@@ -70,7 +70,7 @@
       "filename":  "Starfish.md",
       "emoji": "⭐️",
       "description": "Explorez ce qu’il faut continuer, arrêter ou tester avec une approche structurée pour relancer l’engagement et clarifier les axes d’amélioration.",
-      "tags": ["Processus", "Mood", "Sprint", "Processus"]
+      "tags": ["Conflits", "Mood", "Sprint", "Processus"]
     },
     {
       "id": "ligne-vie",
@@ -78,7 +78,7 @@
       "filename":  "La-ligne-de-vie.md",
       "emoji": "🖐️",
       "description": "Prenez du recul sur plusieurs sprints en retraçant les hauts et les bas pour identifier ensemble les forces à mobiliser à l’avenir.",
-      "tags": ["Mood", "Sprint", "Vision"]
+      "tags": ["Mood", "Processus", "Vision"]
     },
     {
       "id": "dohyo-dynamique",
@@ -86,7 +86,7 @@
       "filename":  "Dohyo-Dynamique.md",
       "emoji": "⭕️",
       "description": "Boostez cohésion et engagement avec une rétro ludique inspirée du sumo pour transformer tensions en actions collectives.",
-      "tags": ["Performance", "Innovation", "Fun"]
+      "tags": ["Performance", "Innovation", "Fun", "Collaboration"]
     },
     {
       "id": "joyeuses-paques",
@@ -94,7 +94,7 @@
       "filename":  "Joyeuses-Paques.md",
       "emoji": "🐣",
       "description": "Chasse aux œufs ludique pour faire émerger et prioriser des actions d'amélioration dans une ambiance festive et bienveillante.",
-      "tags": ["Fun","Processus", "Mood", "Innovation"]
+      "tags": ["Fun", "Processus", "Mood", "Innovation"]
     },
     {
       "id": "daki",
@@ -126,7 +126,7 @@
       "filename":  "Jurassic-Park.md",
       "emoji": "🦖",
       "description": "Un jeu de rôle immersif pour identifier des problèmes clés et générer des solutions créatives dans une ambiance ludique et originale.",
-      "tags": ["Innovation", "Fun", "Processus", "Conflits"]
+      "tags": ["Collaboration", "Fun", "Processus", "Conflits"]
     }
   ]
 }
