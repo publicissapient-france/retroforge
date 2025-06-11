@@ -72,3 +72,7 @@ Processus, Performance
   - On **arrose** (Improve),
   - Et on **entretient** (Keep).
 - Proposez à chaque membre de **s'engager personnellement** sur une action dans "Add" ou "Improve" pour renforcer la responsabilisation.
+
+# Illustration
+
+![illustration](/retros/images/DAKI/Daki.png)

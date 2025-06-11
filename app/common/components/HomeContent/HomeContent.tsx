@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { NavLink } from 'react-router'
 
@@ -26,10 +26,6 @@ export default function HomeContent() {
 
     return () => mediaQuery.removeEventListener('change', registerOnMediaChange)
   }, [])
-
-  useEffect(() => {
-    console.log('isSmall', isSmall)
-  }, [isSmall])
 
   return (
     <div className={styles.content}>

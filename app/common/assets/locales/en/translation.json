@@ -1,0 +1,58 @@
+{
+  "title": "Retroforge",
+  "description": "Build a retrospective tailored to your needs!",
+  "home": {
+    "title": "Home",
+    "welcomeLabel": "Match your ideal retrospective.",
+    "start": "Start",
+    "advanced": "Advanced mode",
+    "redCardQuestion": "The team encountered quite a few difficulties in the last sprint.",
+    "whiteCardQuestion": "I master Scrum like a boss."
+  },
+  "language": {
+    "fr": "French",
+    "en": "English"
+  },
+  "breadcrumb": {
+    "hammer-swipe": {
+      "title": "Hammer Swipe"
+    },
+    "deep-anvil": {
+      "title": "Deep Anvil"
+    },
+    "match": {
+      "title": "Match"
+    },
+    "retrospectives": {
+      "title": "All retrospectives"
+    }
+  },
+  "hammerSwipe": {
+    "title": "Hammer Swipe",
+    "description": "Swipe left or right to get the most suitable retrospective!"
+  },
+  "deepAnvil": {
+    "title": "Deep Anvil",
+    "description": "Select the answer that best matches your needs from the list to get the most suitable retrospective!"
+  },
+  "actions": {
+    "yes": "Yes",
+    "no": "No"
+  },
+  "match": {
+    "title": "Match"
+  },
+  "retrospectives": {
+    "NOT_PERTINENT": "We couldn't find any relevant retrospectives based on your answers, but here's a list of retrospectives that might be useful to you.",
+    "NO_MATCH": "The answers you provided didn't allow us to find a suitable retrospective, please review your answers.",
+    "MATCHED": "Here's a list of retrospectives tailored to your needs",
+    "canMatch": "These retrospectives might also interest you",
+    "title": "All retrospectives",
+    "seeAll": "See all retrospectives",
+    "description": "Find all retrospectives",
+    "notFound": "Retrospective does not exist"
+  },
+  "footer": {
+    "whoAreWe": "Who are we"
+  }
+}

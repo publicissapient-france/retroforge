@@ -1,5 +1,7 @@
+import { TranslatedField } from './TranslatedField'
+
 export type TagsRetrospective = {
-  name: string
+  name: TranslatedField
   tags: string[]
 }
 
@@ -7,7 +9,7 @@ export type Retrospective = TagsRetrospective & {
   id: string
   filename: string
   emoji: string
-  description: string
+  description: TranslatedField
 }
 
 

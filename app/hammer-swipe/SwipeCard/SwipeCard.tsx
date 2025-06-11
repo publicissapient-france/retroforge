@@ -1,6 +1,7 @@
 import { animate, motion, useMotionValue, useTransform, type ValueAnimationTransition } from 'framer-motion'
 import React, { useState } from 'react'
 
+import { useCurrentLanguage } from '~/common/hooks/UseCurrentLanguage'
 import { Action, type Question } from '~/hammer-swipe/HammerSwipe'
 import SwipeAction from '~/hammer-swipe/SwipeAction/SwipeAction'
 
@@ -22,10 +23,13 @@ export type SwipeCardProps = {
   card: Question
   onRemove: (question: Question, action: Action) => void
   index: number
+  total: number
 }
 
-export default function SwipeCard({ card, onRemove, index }: SwipeCardProps) {
+export default function SwipeCard({ card, onRemove, index, total }: SwipeCardProps) {
   const [initialRotation] = useState(rotRandom[index])
+  const { currentLanguage } = useCurrentLanguage()
+  const position = React.useMemo(() => total - index, [])
   const x = useMotionValue(0)
   const scale = useMotionValue(1)
   const rotate = useMotionValue(initialRotation)
@@ -66,8 +70,9 @@ export default function SwipeCard({ card, onRemove, index }: SwipeCardProps) {
       }}
       className="flex flex-col absolute max-md:w-[300px] md:w-[336px] items-center justify-between max-md:h-90 md:h-125 overflow-hidden box-border p-[30px] shadow-[0_2px_8px_-4px_rgba(0,0,0,0.2)] rounded-[15px] border border-[#EEEEEE] bg-white dark:bg-gray-800 text-center will-change-transform"
     >
-      <img className="max-md:w-36 lg:w-60" src={`/images/swipes/${card.id}.png`} alt={card.question} draggable={false} width={200} height={200} />
-      <p className="uppercase max-md:text-[12px] md:text-[14px] min-h-[54px] max-md:leading-[14px] md:leading-[18px]">{card.question}</p>
+      <p className="text-xs italic font-bold">{position}/{total}</p>
+      <img className="max-md:w-36 lg:w-60" src={`/images/swipes/${card.id}.png`} alt={card.question[currentLanguage]} draggable={false} width={200} height={200} />
+      <p className="uppercase max-md:text-[12px] md:text-[14px] min-h-[54px] max-md:leading-[14px] md:leading-[18px]">{card.question[currentLanguage]}</p>
       <div className="flex w-full justify-between px-2">
         <SwipeAction type={Action.NO} onClick={onActionPerformed} />
         <SwipeAction type={Action.YES} onClick={onActionPerformed} />

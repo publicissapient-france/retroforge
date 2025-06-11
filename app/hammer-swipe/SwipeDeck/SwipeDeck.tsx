@@ -1,4 +1,4 @@
-import { useEffect,useState } from 'react'
+import React, { useEffect,useState } from 'react'
 
 import { Action, type Question } from '~/hammer-swipe/HammerSwipe'
 import SwipeCard from '~/hammer-swipe/SwipeCard/SwipeCard'
@@ -14,6 +14,7 @@ type SwipeDeckProps = {
 export default function SwipeDeck({ questions, onQuestionAccepted, onFinished }: SwipeDeckProps) {
   const [clientSide, setClientSide] = useState(false)
   const [cardStack, setCardStack] = useState(questions)
+  const total = React.useMemo(() => cardStack.length, [])
 
   useEffect(() => {
     setClientSide(true)
@@ -34,7 +35,7 @@ export default function SwipeDeck({ questions, onQuestionAccepted, onFinished }:
       <section className={styles.deck}>
         <div>
           {cardStack.map((card, index) => (
-            <SwipeCard key={card.id} card={card} onRemove={removeCard} index={index} />
+            <SwipeCard key={card.id} card={card} onRemove={removeCard} index={index} total={total} />
           ))}
         </div>
       </section>

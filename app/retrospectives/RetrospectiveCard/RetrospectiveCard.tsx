@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { ReactNode } from 'react'
 
+import { useCurrentLanguage } from '~/common/hooks/UseCurrentLanguage'
 import { Retrospective } from '~/common/types/Restrospective'
 
 export type RetrospectiveCardSize = 'small' | 'medium' | 'large'
@@ -29,6 +30,7 @@ const classByColor = {
 export default function RetrospectiveCard({ retrospective, icon, size = 'medium', color = 'neutral' }: RetrospectiveCardProps) {
   const sizeClasses = classBySize[size]
   const colorClasses = classByColor[color]
+  const { currentLanguage } = useCurrentLanguage()
 
   return (
     <motion.div
@@ -37,8 +39,8 @@ export default function RetrospectiveCard({ retrospective, icon, size = 'medium'
     >
       {icon && <span className="absolute top-[-15px] text-4xl">{icon}</span>}
       <span className="text-4xl">{retrospective.emoji}</span>
-      <h5 className="font-bold">{retrospective.name}</h5>
-      <p className="text-xs">{retrospective.description}</p>
+      <h5 className="font-bold">{retrospective.name[currentLanguage]}</h5>
+      <p className="text-xs">{retrospective.description[currentLanguage]}</p>
     </motion.div>
   )
 }

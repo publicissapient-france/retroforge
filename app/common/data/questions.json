@@ -2,184 +2,289 @@
   "questions": [
     {
       "id": "q001",
-      "question": "Comment décris-tu ton niveau en tant que Scrum Master?",
+      "question": {
+        "fr": "Comment décris-tu ton niveau en tant que Scrum Master?",
+        "en": "How would you describe your level as a Scrum Master?"
+      },
       "responses": [
         {
           "id": "q001-r001",
-          "label": "Junior",
+          "label": {
+            "fr": "Junior",
+            "en": "Junior"
+          },
           "tags": ["Sprint"]
         },
         {
           "id": "q001-r002",
-          "label": "Intermédiaire",
+          "label": {
+            "fr": "Intermédiaire",
+            "en": "Intermediate"
+          },
           "tags": ["Sprint", "Processus"]
         },
         {
           "id": "q001-r003",
-          "label": "Senior",
+          "label": {
+            "fr": "Senior",
+            "en": "Senior"
+          },
           "tags": ["Sprint", "Processus", "Performance"]
         }
       ]
     },
     {
       "id": "q002",
-      "question": "Comment te sens-tu dans cette équipe ?",
+      "question": {
+        "fr": "Comment te sens-tu dans cette équipe ?",
+        "en": "How do you feel in this team?"
+      },
       "responses": [
         {
           "id": "q002-r001",
-          "label": "Je viens d'arriver, je les découvre",
+          "label": {
+            "fr": "Je viens d'arriver, je les découvre",
+            "en": "I just arrived, I'm getting to know them"
+          },
           "tags": ["mood"]
         },
         {
           "id": "q002-r002",
-          "label": "Je commence à les connaître",
+          "label": {
+            "fr": "Je commence à les connaître",
+            "en": "I'm starting to know them"
+          },
           "tags": ["mood", "Processus"]
         },
         {
           "id": "q002-r003",
-          "label": "On se connait bien",
+          "label": {
+            "fr": "On se connait bien",
+            "en": "We know each other well"
+          },
           "tags": ["Fun", "Processus", "Performance"]
         }
       ]
     },
     {
       "id": "q003",
-      "question": "À quel point es-tu disposé.e à préparer la rétrospective ?",
+      "question": {
+        "fr": "À quel point es-tu disposé.e à préparer la rétrospective ?",
+        "en": "How willing are you to prepare the retrospective?"
+      },
       "responses": [
         {
           "id": "q003-r001",
-          "label": "J'ai pas le temps",
+          "label": {
+            "fr": "J'ai pas le temps",
+            "en": "I don't have time"
+          },
           "tags": ["Rapide"]
         },
         {
           "id": "q003-r002",
-          "label": "Je peux m'arranger",
+          "label": {
+            "fr": "Je peux m'arranger",
+            "en": "I can make arrangements"
+          },
           "tags": ["Sprint", "Processus"]
         },
         {
           "id": "q003-r003",
-          "label": "Dispo!",
+          "label": {
+            "fr": "Dispo!",
+            "en": "Available!"
+          },
           "tags": ["Fun", "Innovation"]
         }
       ]
     },
     {
       "id": "q004",
-      "question": "L’équipe a-t-elle rencontré des problèmes majeurs lors du dernier sprint ?",
+      "question": {
+        "fr": "L'équipe a-t-elle rencontré des problèmes majeurs lors du dernier sprint ?",
+        "en": "Did the team encounter any major issues during the last sprint?"
+      },
       "responses": [
         {
           "id": "q004-r001",
-          "label": "Pas du tout",
+          "label": {
+            "fr": "Pas du tout",
+            "en": "Not at all"
+          },
           "tags": []
         },
         {
           "id": "q004-r002",
-          "label": "Un peu",
+          "label": {
+            "fr": "Un peu",
+            "en": "A little"
+          },
           "tags": ["Sprint", "Processus"]
         },
         {
           "id": "q004-r003",
-          "label": "Beaucoup",
+          "label": {
+            "fr": "Beaucoup",
+            "en": "A lot"
+          },
           "tags": ["Sprint", "Processus", "Performance"]
         }
       ]
     },
     {
       "id": "q005",
-      "question": "Y a-t-il eu des tensions ou des malentendus entre les membres de l'équipe ?",
+      "question": {
+        "fr": "Y a-t-il eu des tensions ou des malentendus entre les membres de l'équipe ?",
+        "en": "Have there been any tensions or misunderstandings between team members?"
+      },
       "responses": [
         {
           "id": "q005-r001",
-          "label": "Non",
+          "label": {
+            "fr": "Non",
+            "en": "No"
+          },
           "tags": []
         },
         {
           "id": "q005-r002",
-          "label": "Oui",
+          "label": {
+            "fr": "Oui",
+            "en": "Yes"
+          },
           "tags": ["Conflits", "Processus"]
         }
       ]
     },
     {
       "id": "q006",
-      "question": "Ressentez-vous un manque de motivation, d’énergie, de dynamisme dans le groupe ?",
+      "question": {
+        "fr": "Ressentez-vous un manque de motivation, d'énergie, de dynamisme dans le groupe ?",
+        "en": "Do you feel a lack of motivation, energy, or dynamism in the group?"
+      },
       "responses": [
         {
           "id": "q006-r001",
-          "label": "Non",
+          "label": {
+            "fr": "Non",
+            "en": "No"
+          },
           "tags": []
         },
         {
           "id": "q006-r002",
-          "label": "Oui",
+          "label": {
+            "fr": "Oui",
+            "en": "Yes"
+          },
           "tags": ["mood"]
         }
       ]
     },
     {
       "id": "q007",
-      "question": "Sommes-nous dans une période spéciale ? (événement sportif, saisonnalité, Halloween, fin d'année, etc.)",
+      "question": {
+        "fr": "Sommes-nous dans une période spéciale ? (événement sportif, saisonnalité, Halloween, fin d'année, etc.)",
+        "en": "Are we in a special period? (sports event, seasonality, Halloween, end of year, etc.)"
+      },
       "responses": [
         {
           "id": "q007-r001",
-          "label": "Non",
+          "label": {
+            "fr": "Non",
+            "en": "No"
+          },
           "tags": []
         },
         {
           "id": "q007-r002",
-          "label": "Oui",
+          "label": {
+            "fr": "Oui",
+            "en": "Yes"
+          },
           "tags": ["mood", "Fun"]
         }
       ]
     },
     {
       "id": "q008",
-      "question": "Un problème spécifique à régler ?",
+      "question": {
+        "fr": "Un problème spécifique à régler ?",
+        "en": "A specific issue to address?"
+      },
       "responses": [
         {
           "id": "q008-r001",
-          "label": "De vision",
+          "label": {
+            "fr": "De vision",
+            "en": "Vision"
+          },
           "tags": ["Vision"]
         },
         {
           "id": "q008-r002",
-          "label": "De performances",
+          "label": {
+            "fr": "De performances",
+            "en": "Performance"
+          },
           "tags": ["Performance"]
         },
         {
           "id": "q008-r003",
-          "label": "De livraison",
+          "label": {
+            "fr": "De livraison",
+            "en": "Delivery"
+          },
           "tags": ["Processus"]
         },
         {
           "id": "q008-r004",
-          "label": "De communication",
+          "label": {
+            "fr": "De communication",
+            "en": "Communication"
+          },
           "tags": ["Conflits"]
         }
       ]
     },
     {
       "id": "q009",
-      "question": "Quel type de rétro cherchez-vous ?",
+      "question": {
+        "fr": "Quel type de rétro cherchez-vous ?",
+        "en": "What type of retrospective are you looking for?"
+      },
       "responses": [
         {
           "id": "q009-r001",
-          "label": "Engageante",
+          "label": {
+            "fr": "Engageante",
+            "en": "Engaging"
+          },
           "tags": ["mood"]
         },
         {
           "id": "q009-r002",
-          "label": "Fun",
+          "label": {
+            "fr": "Fun",
+            "en": "Fun"
+          },
           "tags": ["Fun"]
         },
         {
           "id": "q009-r003",
-          "label": "Rapide",
+          "label": {
+            "fr": "Rapide",
+            "en": "Quick"
+          },
           "tags": ["Performance"]
         },
         {
           "id": "q009-r004",
-          "label": "Créative",
+          "label": {
+            "fr": "Créative",
+            "en": "Creative"
+          },
           "tags": ["Innovation"]
         }
       ]

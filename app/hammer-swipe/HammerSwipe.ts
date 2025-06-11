@@ -1,4 +1,5 @@
 import type { Tags } from '~/common/types/Tags'
+import { TranslatedField } from '~/common/types/TranslatedField'
 
 export enum Action {
   YES = 1,
@@ -7,7 +8,7 @@ export enum Action {
 
 export type Question = {
   id: string
-  question: string
+  question: TranslatedField
   tags: Tags
 }
 

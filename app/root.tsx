@@ -4,7 +4,6 @@ import './i18n'
 import React from 'react'
 import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router'
 
-import Header from '~/common/components/header/Header'
 import { RetrospectiveProvider } from '~/common/context/RetrospectiveContext'
 
 import type { Route } from './+types/root'
@@ -41,6 +40,17 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
+  const [loading, setLoading] = React.useState(true)
+
+  // Very ugly, but it allows to avoid a little glitch for the translations, as we don't have server side
+  React.useEffect(() => {
+    setTimeout(() => setLoading(false), 10)
+  }, [])
+
+  if (loading) {
+    return <></>
+  }
+
   return (
     <div className="h-full">
       <RetrospectiveProvider>

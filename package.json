@@ -3,18 +3,20 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "react-router build",
+    "build": "rm -rf build && react-router build",
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
     "lint": "eslint ."
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.4",
+    "@heroicons/react": "^2.2.0",
     "@react-router/node": "^7.4.1",
     "@react-router/serve": "^7.4.1",
     "framer-motion": "^12.6.3",
     "i18next": "^24.2.3",
-    "i18next-browser-languagedetector": "^8.0.4",
+    "i18next-browser-languagedetector": "^8.2.0",
     "isbot": "^5.1.25",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

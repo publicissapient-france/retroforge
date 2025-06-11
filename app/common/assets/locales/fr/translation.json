@@ -9,6 +9,10 @@
     "redCardQuestion": "L'équipe a rencontré pas mal de difficultés au dernier sprint.",
     "whiteCardQuestion": "Je maîtrise Scrum comme un chef."
   },
+  "language": {
+    "fr": "Français",
+    "en": "Anglais"
+  },
   "breadcrumb": {
     "hammer-swipe": {
       "title": "Hammer Swipe"

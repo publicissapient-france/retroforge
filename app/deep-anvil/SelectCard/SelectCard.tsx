@@ -1,6 +1,7 @@
 import { animate, motion, useMotionValue, useTransform } from 'framer-motion'
 import React from 'react'
 
+import { useCurrentLanguage } from '~/common/hooks/UseCurrentLanguage'
 import type { SelectQuestion, SelectResponse } from '~/deep-anvil/DeepAnvil'
 
 import styles from './SelectCard.module.css'
@@ -12,6 +13,7 @@ export type SelectCardProp = {
 
 export default function SelectCard({ question, onSelected }: SelectCardProp) {
   const x = useMotionValue(0)
+  const { currentLanguage } = useCurrentLanguage()
   const opacity = useTransform(x, [-1000, -800, -150, 0, 150, 800, 1000], [0, 0.8, 1, 1, 1, 0.8, 0])
 
   function handleChange(event: React.ChangeEvent<HTMLInputElement>, response: SelectResponse) {
@@ -27,13 +29,13 @@ export default function SelectCard({ question, onSelected }: SelectCardProp) {
       style={{ x, opacity }}
       className="rounded-[15px] lg:w-[800px] sm:w-[550px] max-sm:w-[360px] m-5 border border-[#EEEEEE] bg-white dark:bg-gray-800 box-border p-[40px] shadow-[0_2px_8px_-4px_rgba(0,0,0,0.2)] uppercase"
     >
-      <img className="lg:w-[256px] sm:w-[200px] max-sm:w-[90px] m-auto" src={`/images/selects/${question.id}.png`} alt={question.question} draggable={false} />
-      <div className="lg:text-base sm:text-sm max-sm:text-[10px] font-bold border border-t-0 border-l-0 border-r-0 border-b-[#EEEEEE] pb-[20px] mb-[20px] text-center">{question.question}</div>
+      <img className="lg:w-[256px] sm:w-[200px] max-sm:w-[90px] m-auto" src={`/images/selects/${question.id}.png`} alt={question.question[currentLanguage]} draggable={false} />
+      <div className="lg:text-base sm:text-sm max-sm:text-[10px] font-bold border border-t-0 border-l-0 border-r-0 border-b-[#EEEEEE] pb-[20px] mb-[20px] text-center">{question.question[currentLanguage]}</div>
       <ul className={`flex flex-col gap-2 max-sm:gap-1 ${styles['select-card']}`}>
         {question.responses.map((response) => (
-          <li className="flex flex-row cursor-pointer w-full border border-[#EEEEEE] px-[10px] dark:hover:bg-gray-700 hover:bg-[#FAFAFA] text-sm" key={response.label}>
+          <li className="flex flex-row cursor-pointer w-full border border-[#EEEEEE] px-[10px] dark:hover:bg-gray-700 hover:bg-[#FAFAFA] text-sm" key={response.label[currentLanguage]}>
             <input className="cursor-pointer" id={response.id} type="radio" value={response.id} name={question.id} onChange={(event) => handleChange(event, response)} />
-            <label htmlFor={response.id} className="lg:text-sm sm:text-xs max-sm:text-[10px] w-full py-3 ms-2 cursor-pointer block">{response.label}</label>
+            <label htmlFor={response.id} className="lg:text-sm sm:text-xs max-sm:text-[10px] w-full py-3 ms-2 cursor-pointer block">{response.label[currentLanguage]}</label>
           </li>
         ))}
       </ul>

@@ -2,130 +2,226 @@
   "retrospectives": [
     {
       "id": "mad-sad-glad",
-      "name": "Mad Sad Glad",
+      "name": {
+        "en": "Mad Sad Glad",
+        "fr": "Mad Sad Glad"
+      },
       "filename":  "Mad-Sad-Glad.md",
       "emoji": "😠",
-      "description": "Exprimez les émotions vécues durant le sprint (colère, tristesse, joie) pour mieux comprendre et renforcer la dynamique d’équipe.",
+      "description": {
+        "fr": "Exprimez les émotions vécues durant le sprint (colère, tristesse, joie) pour mieux comprendre et renforcer la dynamique d'équipe.",
+        "en": "Express emotions experienced during the sprint (anger, sadness, joy) to better understand and strengthen team dynamics."
+      },
       "tags": ["Mood", "Sprint"]
     },
     {
       "id": "dixit",
-      "name": "Dixit",
+      "name": {
+        "en": "Dixit",
+        "fr": "Dixit"
+      },
       "filename": "Dixit.md",
       "emoji": "📣,",
-      "description": "utilisez des cartes imagées pour explorer les ressentis, libérer la parole et renforcer l’écoute active au sein de l’équipe.",
+      "description": {
+        "fr": "utilisez des cartes imagées pour explorer les ressentis, libérer la parole et renforcer l'écoute active au sein de l'équipe.",
+        "en": "Use image cards to explore feelings, encourage expression and strengthen active listening within the team."
+      },
       "tags": ["Fun", "Mood", "Vision"]
     },
     {
       "id": "start-stop-continue",
-      "name": "Start Stop Continue",
+      "name": {
+        "en": "Start Stop Continue",
+        "fr": "Start Stop Continue"
+      },
       "filename":  "Start-Stop-Continue.md",
       "emoji": "🛑",
-      "description": "Identifiez ce qu’il faut commencer, arrêter ou poursuivre pour affiner les pratiques de l’équipe dans une dynamique simple d’amélioration continue.",
+      "description": {
+        "fr": "Identifiez ce qu'il faut commencer, arrêter ou poursuivre pour affiner les pratiques de l'équipe dans une dynamique simple d'amélioration continue.",
+        "en": "Identify what to start, stop, or continue to refine team practices in a simple continuous improvement dynamic."
+      },
       "tags": ["Sprint", "Performance"]
     },
     {
       "id": "dark-manifesto",
-      "name": "Dark Manifesto",
+      "name": {
+        "en": "Dark Manifesto",
+        "fr": "Dark Manifesto"
+      },
       "filename":  "Dark-Manifesto.md",
       "emoji": "💣",
-      "description": "Identifiez les pires travers de l'équipe avec humour noir pour révéler les risques majeurs et bâtir un plan d'action concret et salvateur.",
+      "description": {
+        "fr": "Identifiez les pires travers de l'équipe avec humour noir pour révéler les risques majeurs et bâtir un plan d'action concret et salvateur.",
+        "en": "Identify the team's worst traits with dark humor to reveal major risks and build a concrete and saving action plan."
+      },
       "tags": ["Conflits", "Vision", "Fun"]
     },
     {
       "id": "vis-ma-vie",
-      "name": "Vis ma vie",
+      "name": {
+        "en": "Walk in My Shoes",
+        "fr": "Vis ma vie"
+      },
       "filename":  "Vis-ma-Vie.md",
       "emoji": "🤓",
-      "description": "Favorise l’empathie en invitant chaque membre à vivre le rôle d’un autre pour lever malentendus et mieux comprendre les responsabilités.",
+      "description": {
+        "fr": "Favorise l'empathie en invitant chaque membre à vivre le rôle d'un autre pour lever malentendus et mieux comprendre les responsabilités.",
+        "en": "Promotes empathy by inviting each member to experience another's role to clear up misunderstandings and better understand responsibilities."
+      },
       "tags": ["Vision", "Mood"]
     },
     {
       "id": "carte-postale-futur",
-      "name": "La carte postale du futur",
+      "name": {
+        "en": "The Future Postcard",
+        "fr": "La carte postale du futur"
+      },
       "filename":  "carte-du-futur.md",
       "emoji": "🌅",
-      "description": "Projetez-vous à la fin du projet en écrivant une carte postale du futur pour aligner l’équipe sur une vision partagée et des actions concrètes.",
+      "description": {
+        "fr": "Projetez-vous à la fin du projet en écrivant une carte postale du futur pour aligner l'équipe sur une vision partagée et des actions concrètes.",
+        "en": "Project yourself to the end of the project by writing a postcard from the future to align the team on a shared vision and concrete actions."
+      },
       "tags": ["Vision", "Innovation"]
     },
     {
       "id": "4l",
-      "name": "4L",
+      "name": {
+        "en": "4L",
+        "fr": "4L"
+      },
       "filename":  "4L.md",
       "emoji": "4️⃣",
-      "description": "La rétrospective 4L aide l’équipe à analyser le sprint via 4 axes (Liked, Learned, Lacked, Longed For) et à définir des actions concrètes.",
+      "description": {
+        "fr": "La rétrospective 4L aide l'équipe à analyser le sprint via 4 axes (Liked, Learned, Lacked, Longed For) et à définir des actions concrètes.",
+        "en": "The 4L retrospective helps the team analyze the sprint through 4 axes (Liked, Learned, Lacked, Longed For) and define concrete actions."
+      },
       "tags": ["Sprint", "Mood", "Processus"]
     },
     {
       "id": "speed-boat",
-      "name": "Speed boat",
+      "name": {
+        "en": "Speed boat",
+        "fr": "Speed boat"
+      },
       "filename":  "Speed-Boat.md",
       "emoji": "🛥",
-      "description": "Identifiez freins, moteurs et risques grâce à la métaphore du bateau pour mieux aligner l’équipe vers ses objectifs après un sprint difficile.",
+      "description": {
+        "fr": "Identifiez freins, moteurs et risques grâce à la métaphore du bateau pour mieux aligner l'équipe vers ses objectifs après un sprint difficile.",
+        "en": "Identify brakes, engines and risks through the boat metaphor to better align the team towards its goals after a difficult sprint."
+      },
       "tags": ["Vision", "Innovation"]
     },
     {
       "id": "starfish",
-      "name": "Starfish",
+      "name": {
+        "en": "Starfish",
+        "fr": "Starfish"
+      },
       "filename":  "Starfish.md",
       "emoji": "⭐️",
-      "description": "Explorez ce qu’il faut continuer, arrêter ou tester avec une approche structurée pour relancer l’engagement et clarifier les axes d’amélioration.",
+      "description": {
+        "fr": "Explorez ce qu'il faut continuer, arrêter ou tester avec une approche structurée pour relancer l'engagement et clarifier les axes d'amélioration.",
+        "en": "Explore what to continue, stop or test with a structured approach to boost engagement and clarify improvement areas."
+      },
       "tags": ["Conflits", "Mood", "Sprint", "Processus"]
     },
     {
       "id": "ligne-vie",
-      "name": "La ligne de vie",
+      "name": {
+        "en": "The Life Line",
+        "fr": "La ligne de vie"
+      },
       "filename":  "La-ligne-de-vie.md",
       "emoji": "🖐️",
-      "description": "Prenez du recul sur plusieurs sprints en retraçant les hauts et les bas pour identifier ensemble les forces à mobiliser à l’avenir.",
+      "description": {
+        "fr": "Prenez du recul sur plusieurs sprints en retraçant les hauts et les bas pour identifier ensemble les forces à mobiliser à l'avenir.",
+        "en": "Take a step back over several sprints by tracing the ups and downs to identify together the strengths to mobilize in the future."
+      },
       "tags": ["Mood", "Processus", "Vision"]
     },
     {
       "id": "dohyo-dynamique",
-      "name": "Dohyō Dynamique",
+      "name": {
+        "en": "Dohyō Dynamique",
+        "fr": "Dohyō Dynamique"
+      },
       "filename":  "Dohyo-Dynamique.md",
       "emoji": "⭕️",
-      "description": "Boostez cohésion et engagement avec une rétro ludique inspirée du sumo pour transformer tensions en actions collectives.",
+      "description": {
+        "fr": "Boostez cohésion et engagement avec une rétro ludique inspirée du sumo pour transformer tensions en actions collectives.",
+        "en": "Boost cohesion and engagement with a playful retrospective inspired by sumo to transform tensions into collective actions."
+      },
       "tags": ["Performance", "Innovation", "Fun", "Collaboration"]
     },
     {
       "id": "joyeuses-paques",
-      "name": "Joyeuses Pâques",
+      "name": {
+        "en": "Happy Easter",
+        "fr": "Joyeuses Pâques"
+      },
       "filename":  "Joyeuses-Paques.md",
       "emoji": "🐣",
-      "description": "Chasse aux œufs ludique pour faire émerger et prioriser des actions d'amélioration dans une ambiance festive et bienveillante.",
+      "description": {
+        "fr": "Chasse aux œufs ludique pour faire émerger et prioriser des actions d'amélioration dans une ambiance festive et bienveillante.",
+        "en": "Playful egg hunt to bring out and prioritize improvement actions in a festive and benevolent atmosphere."
+      },
       "tags": ["Fun", "Processus", "Mood", "Innovation"]
     },
     {
       "id": "daki",
-      "name": "Daki",
+      "name": {
+        "en": "Daki",
+        "fr": "Daki"
+      },
       "filename":  "DAKI.md",
       "emoji": "📈",
-      "description": "identifiez ce qu’il faut arrêter, garder, améliorer ou tester pour structurer l’amélioration continue de l’équipe.",
+      "description": {
+        "fr": "identifiez ce qu'il faut arrêter, garder, améliorer ou tester pour structurer l'amélioration continue de l'équipe.",
+        "en": "Identify what to stop, keep, improve or test to structure the team's continuous improvement."
+      },
       "tags": ["Processus", "Performance"]
     },
     {
       "id": "petits-cochons",
-      "name": "Les 3 petits cochons",
+      "name": {
+        "en": "The Three Little Pigs",
+        "fr": "Les 3 petits cochons"
+      },
       "filename":  "Petits-Cochons.md",
       "emoji": "🐷",
-      "description": "Évaluez la solidité de vos pratiques via les maisons des 3 petits cochons pour renforcer ce qui tient, améliorer ce qui vacille et célébrer vos réussites.",
+      "description": {
+        "fr": "Évaluez la solidité de vos pratiques via les maisons des 3 petits cochons pour renforcer ce qui tient, améliorer ce qui vacille et célébrer vos réussites.",
+        "en": "Assess your practices' strength through the three little pigs' houses to reinforce what works, improve what's shaky, and celebrate successes."
+      },
       "tags": ["Processus", "Fun"]
     },
     {
       "id": "good-bad-ugly",
-      "name": "The Good, the Bad & the Ugly",
+      "name": {
+        "en": "The Good, the Bad & the Ugly",
+        "fr": "The Good, the Bad & the Ugly"
+      },
       "filename":  "TheGood-theBad-theUgly.md",
       "emoji": "🎭",
-      "description": "Identifiez rapidement le bon, le mauvais et le très mauvais du sprint pour en tirer des actions concrètes dans un format fun et structuré.",
+      "description": {
+        "fr": "Identifiez rapidement le bon, le mauvais et le très mauvais du sprint pour en tirer des actions concrètes dans un format fun et structuré.",
+        "en": "Quickly identify the good, the bad and the ugly of the sprint to derive concrete actions in a fun and structured format."
+      },
       "tags": ["Processus", "Fun"]
     },
     {
       "id": "jurassic-park",
-      "name": "Jurassic Park",
+      "name": {
+        "en": "Jurassic Park",
+        "fr": "Jurassic Park"
+      },
       "filename":  "Jurassic-Park.md",
       "emoji": "🦖",
-      "description": "Un jeu de rôle immersif pour identifier des problèmes clés et générer des solutions créatives dans une ambiance ludique et originale.",
+      "description": {
+        "fr": "Un jeu de rôle immersif pour identifier des problèmes clés et générer des solutions créatives dans une ambiance ludique et originale.",
+        "en": "An immersive role-playing game to identify key problems and generate creative solutions in a playful and original atmosphere."
+      },
       "tags": ["Collaboration", "Fun", "Processus", "Conflits"]
     }
   ]

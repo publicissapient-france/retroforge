@@ -2,67 +2,106 @@
   "questions": [
     {
       "id": "q001",
-      "question": "L'équipe a-t-elle rencontré des problèmes majeurs lors du dernier sprint ?",
+      "question": {
+        "fr": "L'équipe a-t-elle rencontré des problèmes majeurs lors du dernier sprint ?",
+        "en": "Did the team encounter any major issues during the last sprint?"
+      },
       "tags": ["Sprint", "Processus", "Performance"]
     },
     {
       "id": "q002",
-      "question": "Y a-t-il eu des tensions ou des malentendus entre les membres de l'équipe ?",
+      "question": {
+        "fr": "Y a-t-il eu des tensions ou des malentendus entre les membres de l'équipe ?",
+        "en": "Have there been any tensions or misunderstandings between team members?"
+      },
       "tags": ["Conflits"]
     },
     {
       "id": "q003",
-      "question": "Souhaitez-vous recueillir les émotions et ressentis de l'équipe ?",
+      "question": {
+        "fr": "Souhaitez-vous recueillir les émotions et ressentis de l'équipe ?",
+        "en": "Do you want to gather the team's emotions and feelings?"
+      },
       "tags": ["Mood"]
     },
     {
       "id": "q004",
-      "question": "Le sprint s'est-il bien déroulé, mais vous souhaitez identifier des axes d'amélioration ?",
+      "question": {
+        "fr": "Le sprint s'est-il bien déroulé, mais vous souhaitez identifier des axes d'amélioration ?",
+        "en": "Did the sprint go well, but you want to identify areas for improvement?"
+      },
       "tags": ["Sprint", "Performance"]
     },
     {
       "id": "q005",
-      "question": "L'équipe manque-t-elle de communication et de partage d'informations ?",
+      "question": {
+        "fr": "L'équipe manque-t-elle de communication et de partage d'informations ?",
+        "en": "Is the team lacking communication and information sharing?"
+      },
       "tags": ["Conflits", "Processus"]
     },
     {
       "id": "q006",
-      "question": "Avez-vous besoin d'identifier et de prioriser les risques futurs ?",
+      "question": {
+        "fr": "Avez-vous besoin d'identifier et de prioriser les risques futurs ?",
+        "en": "Do you need to identify and prioritize future risks?"
+      },
       "tags": ["Vision", "Processus"]
     },
     {
       "id": "q007",
-      "question": "Souhaitez-vous que l'équipe réfléchisse aux causes profondes des problèmes rencontrés ?",
+      "question": {
+        "fr": "Souhaitez-vous que l'équipe réfléchisse aux causes profondes des problèmes rencontrés ?",
+        "en": "Do you want the team to reflect on the root causes of the problems encountered?"
+      },
       "tags": ["Vision", "Processus"]
     },
     {
       "id": "q008",
-      "question": "L'équipe est-elle démotivée ou en manque d'énergie ?",
+      "question": {
+        "fr": "L'équipe est-elle démotivée ou en manque d'énergie ?",
+        "en": "Is the team demotivated or lacking energy?"
+      },
       "tags": ["Mood", "Fun", "Innovation"]
     },
     {
       "id": "q009",
-      "question": "Y a-t-il des incompréhensions sur les rôles et responsabilités de chacun ?",
+      "question": {
+        "fr": "Y a-t-il des incompréhensions sur les rôles et responsabilités de chacun ?",
+        "en": "Are there misunderstandings about everyone's roles and responsibilities?"
+      },
       "tags": ["Conflits", "Processus"]
     },
     {
       "id": "q010",
-      "question": "Cherchez-vous une rétrospective ludique et engageante ?",
+      "question": {
+        "fr": "Cherchez-vous une rétrospective ludique et engageante ?",
+        "en": "Are you looking for a playful and engaging retrospective?"
+      },
       "tags": ["Fun", "Innovation"]
     },
     {
       "id": "q011",
-      "question": "Voulez-vous un format de rétrospective rapide et efficace ?",
+      "question": {
+        "fr": "Voulez-vous un format de rétrospective rapide et efficace ?",
+        "en": "Do you want a quick and efficient retrospective format?"
+      },
       "tags": ["Performance"]
     },
     {
       "id": "q012",
-      "question": "Le projet ou le sprint a-t-il été un échec partiel ou total ?",
+      "question": {
+        "fr": "Le projet ou le sprint a-t-il été un échec partiel ou total ?",
+        "en": "Has the project or sprint been a partial or total failure?"
+      },
       "tags": ["Sprint", "Performance"]
     },
     {
       "id": "q013",
-      "question": "L'équipe a-t-elle du mal à s'organiser et à bien répartir les tâches ?",
+      "question": {
+        "fr": "L'équipe a-t-elle du mal à s'organiser et à bien répartir les tâches ?",
+        "en": "Is the team struggling to organize and properly distribute tasks?"
+      },
       "tags": ["Processus"]
     }
   ]
