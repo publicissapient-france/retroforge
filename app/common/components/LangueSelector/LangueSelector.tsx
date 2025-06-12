@@ -20,6 +20,7 @@ export const LangueSelector = () => {
       options={[{ label: t('language.fr'), value: 'fr' }, { label: t('language.en'), value: 'en' }]}
       selectedValue={selectedLanguage}
       onChange={handleLanguageChange}
+      ariaLabel={t('language.openMenu')}
     />
   )
 }

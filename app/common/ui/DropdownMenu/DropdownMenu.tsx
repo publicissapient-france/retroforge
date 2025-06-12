@@ -12,14 +12,15 @@ export interface DropdownMenuProps {
   selectedValue: string
   onChange: (value: string) => void
   anchor?: 'left' | 'right'
+  ariaLabel?: string
 }
 
-export const DropdownMenu = ({ trigger, options, selectedValue, onChange, anchor = 'right' }: DropdownMenuProps) => {
+export const DropdownMenu = ({ trigger, options, selectedValue, onChange, anchor = 'right', ariaLabel = 'open menu' }: DropdownMenuProps) => {
   const anchorClasses = anchor === 'left' ? 'left-0 origin-top-left' : 'right-0 origin-top-right'
 
   return (
     <Menu as="div" className="relative inline-block text-left">
-      <MenuButton className="inline-flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 cursor-pointer">{trigger}</MenuButton>
+      <MenuButton className="inline-flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 cursor-pointer" aria-label={ariaLabel}>{trigger}</MenuButton>
       <Transition
         as={Fragment}
         enter="transition ease-out duration-100"

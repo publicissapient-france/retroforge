@@ -11,7 +11,8 @@
   },
   "language": {
     "fr": "French",
-    "en": "English"
+    "en": "English",
+    "openMenu": "Choose your language"
   },
   "breadcrumb": {
     "hammer-swipe": {
