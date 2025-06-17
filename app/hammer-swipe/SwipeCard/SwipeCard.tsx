@@ -21,12 +21,13 @@ const CARD_ACTIONS_OFFSET = 1000
 
 export type SwipeCardProps = {
   card: Question
-  onRemove: (question: Question, action: Action) => void
+  onRemove: (question: Question) => void
+  onResponse: (question: Question, action: Action) => void
   index: number
   total: number
 }
 
-export default function SwipeCard({ card, onRemove, index, total }: SwipeCardProps) {
+export default function SwipeCard({ card, onRemove, onResponse, index, total }: SwipeCardProps) {
   const [initialRotation] = useState(rotRandom[index])
   const { currentLanguage } = useCurrentLanguage()
   const position = React.useMemo(() => total - index, [])
@@ -37,7 +38,8 @@ export default function SwipeCard({ card, onRemove, index, total }: SwipeCardPro
 
   function onActionPerformed(action: Action) {
     animate(x, CARD_ACTIONS_OFFSET * action.valueOf(), animationOptions)
-    setTimeout(() => onRemove(card, action), 400)
+    onResponse(card, action)
+    setTimeout(() => onRemove(card), 500)
   }
 
   return (

@@ -20,14 +20,20 @@ export default function SwipeDeck({ questions, onQuestionAccepted, onFinished }:
     setClientSide(true)
   }, [])
 
-  const removeCard = (question: Question, action: Action) => {
-    setCardStack((prev) => prev.filter((card) => card.id !== question.id))
+  useEffect(() => {
+    if (cardStack.length === 0) {
+      onFinished()
+    }
+  }, [cardStack])
+
+  const onResponseHandler = (question: Question, action: Action) => {
     if (action === Action.YES) {
       onQuestionAccepted(question)
     }
-    if (cardStack.length <= 1) {
-      onFinished()
-    }
+  }
+
+  const onAnimationTerminatedHandler = (question: Question) => {
+    setCardStack((prev) => prev.filter((card) => card.id !== question.id))
   }
 
   return (
@@ -35,7 +41,7 @@ export default function SwipeDeck({ questions, onQuestionAccepted, onFinished }:
       <section className={styles.deck}>
         <div>
           {cardStack.map((card, index) => (
-            <SwipeCard key={card.id} card={card} onRemove={removeCard} index={index} total={total} />
+            <SwipeCard key={card.id} card={card} onResponse={onResponseHandler} onRemove={onAnimationTerminatedHandler} index={index} total={total} />
           ))}
         </div>
       </section>
