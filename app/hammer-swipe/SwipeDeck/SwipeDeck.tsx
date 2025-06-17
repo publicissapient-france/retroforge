@@ -15,18 +15,20 @@ export default function SwipeDeck({ questions, onQuestionAccepted, onFinished }:
   const [clientSide, setClientSide] = useState(false)
   const [cardStack, setCardStack] = useState(questions)
   const total = React.useMemo(() => cardStack.length, [])
+  const [answeredCount, setAnsweredCount] = useState(0)
 
   useEffect(() => {
     setClientSide(true)
   }, [])
 
   useEffect(() => {
-    if (cardStack.length === 0) {
+    if (answeredCount === questions.length) {
       onFinished()
     }
-  }, [cardStack])
+  }, [answeredCount])
 
   const onResponseHandler = (question: Question, action: Action) => {
+    setAnsweredCount(answeredCount + 1)
     if (action === Action.YES) {
       onQuestionAccepted(question)
     }
