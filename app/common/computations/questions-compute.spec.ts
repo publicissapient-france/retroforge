@@ -74,7 +74,7 @@ describe('QuestionCompute', () => {
       'filename':  'Starfish.md',
       'emoji': '😃',
       'description': 'Explorez ce qu’il faut continuer, arrêter ou tester avec une approche structurée pour relancer l’engagement et clarifier les axes d’amélioration.',
-      'tags': ['Processus', 'Mood', 'Sprint', 'Processus'],
+      'tags': ['Processus', 'Mood', 'Sprint'],
     },
     {
       'id': 'ligne-vie',
