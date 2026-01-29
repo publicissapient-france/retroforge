@@ -37,6 +37,7 @@ export default function HomeContent() {
             <NavLink to="/deep-anvil" className="font-bold uppercase  text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-full text-lg px-15 py-2.5 me-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 text-center">{t('home.advanced')}</NavLink>
           </div>
           <NavLink to="/retrospectives" className="tracking-[-0.05rem] ml-2 max-[1100px]:text-center">{t('retrospectives.seeAll')}</NavLink>
+                <h3 className="right uppercase text-(--accent-color) dark:text-(--accent-color-dark)"><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=oZ4s1SF8sUeCozOnSx90uGCkTilWip1PpA6dC9L_8JhURU9TU1pORlVRNEQ0VDM0S0pVRlBFNjlaTS4u" title="Linktitle" target="_blank" rel="noopener noreferrer">Share your feedback</a></h3>
         </section>
       </div>
       {!isSmall && (
