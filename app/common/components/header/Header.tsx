@@ -18,6 +18,7 @@ export default function Header({ displayLogo = false }: HeaderProps) {
       <h1 className="self-center uppercase font-bold tracking-(--title-letter-spacing) text-(--accent-color) dark:text-(--accent-color-dark)">{t('title')}</h1>
       {displayLogo && <img src={psLogo} className="w-[55px] h-[29px]" alt="logo publicis sapient" />}
       <LangueSelector />
+      <h1 className="self-center uppercase font-bold tracking-(--title-letter-spacing) text-(--accent-color) dark:text-(--accent-color-dark)"><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=oZ4s1SF8sUeCozOnSx90uGCkTilWip1PpA6dC9L_8JhURU9TU1pORlVRNEQ0VDM0S0pVRlBFNjlaTS4u" title="Linktitle">Share your feedback</a></h1>
     </header>
   )
 }
