@@ -3,8 +3,10 @@ import './i18n'
 
 import React from 'react'
 import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router'
+import { AppInsightsContext } from '@microsoft/applicationinsights-react-js'
 
 import { RetrospectiveProvider } from '~/common/context/RetrospectiveContext'
+import { reactPlugin } from '~/utils/appInsights'
 
 import type { Route } from './+types/root'
 
@@ -53,9 +55,11 @@ export default function App() {
 
   return (
     <div className="h-full">
-      <RetrospectiveProvider>
-        <Outlet />
-      </RetrospectiveProvider>
+      <AppInsightsContext.Provider value={reactPlugin}>
+        <RetrospectiveProvider>
+          <Outlet />
+        </RetrospectiveProvider>
+      </AppInsightsContext.Provider>
     </div>
   )
 }
