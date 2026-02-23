@@ -1,1 +1,1 @@
-// <LangueSelector />
+<LangueSelector />
