@@ -3,3 +3,7 @@
 .header {
     height: var(--header-height);
 }
+/* Hide the language selector */
+:global(.LangueSelector) {
+    display: none;
+}
