@@ -16,10 +16,10 @@
   },
   "breadcrumb": {
     "hammer-swipe": {
-      "title": "Hammer Swipe"
+      "title": "Simple Mode"
     },
     "deep-anvil": {
-      "title": "Deep Anvil"
+      "title": "Advanced Mode"
     },
     "match": {
       "title": "Match"
@@ -29,11 +29,11 @@
     }
   },
   "hammerSwipe": {
-    "title": "Hammer Swipe",
+    "title": "Simple Mode",
     "description": "Swippez vers la gauche ou la droite pour obtenir la retrospective la plus adaptée !"
   },
   "deepAnvil": {
-    "title": "Deep Anvil",
+    "title": "Advanced Mode",
     "description": "Sélectionnez la réponse qui vous correspond le mieux parmis la liste pour obtenir la retrospective la plus adaptée !"
   },
   "actions": {

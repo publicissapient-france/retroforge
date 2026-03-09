@@ -7,13 +7,12 @@
 
 > Build a retrospective tailored to your needs!
 
-Retroforge is an interactive web application that helps agile teams discover and select the most suitable retrospective format for their needs. Using two engaging modes—**Hammer Swipe** (swipe-based) and **Deep Anvil** (question-based)—teams can quickly match with retrospective formats that fit their current situation.
+Retroforge is an interactive web application that helps agile teams discover and select the most suitable retrospective format for their needs. Using two engaging modes—**Simple Mode** (swipe-based) and **Advanced Mode** (question-based)—teams can quickly match with retrospective formats that fit their current situation.
 
 ## Features
 
-- **🔨 Hammer Swipe Mode**: Tinder-style swipe interface to quickly browse and select retrospectives
-- **⚒️ Deep Anvil Mode**: Answer targeted questions to get personalized retrospective recommendations
-- **🌐 Multilingual**: Full support for English and French
+- **🔨 Simple Mode Mode**: Tinder-style swipe interface to quickly browse and select retrospectives
+- **⚒️ Advanced Mode Mode**: Answer targeted questions to get personalized retrospective recommendations
 - **📱 Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
 - **🎨 Modern UI**: Built with TailwindCSS 4 and Framer Motion for smooth animations
 - **📊 Retrospective Matching**: Smart algorithm that scores and recommends retrospectives based on your answers
@@ -145,8 +144,8 @@ retroforge/
 │   │   ├── hooks/          # Custom React hooks
 │   │   ├── types/          # TypeScript type definitions
 │   │   └── ui/             # UI component library
-│   ├── deep-anvil/         # Deep Anvil mode components
-│   ├── hammer-swipe/       # Hammer Swipe mode components
+│   ├── deep-anvil/         # Advanced Mode mode components
+│   ├── hammer-swipe/       # Simple Mode mode components
 │   ├── layouts/            # Layout components
 │   ├── retrospectives/     # Retrospective listing and details
 │   └── routes/             # Route components
@@ -159,7 +158,7 @@ retroforge/
 
 ## How It Works
 
-1. **Home Screen**: Users choose between Hammer Swipe or Deep Anvil mode
+1. **Home Screen**: Users choose between Simple Mode or Advanced Mode mode
 2. **Answer Questions**: Users interact with questions about their team's situation
 3. **Matching Algorithm**: The app calculates scores for retrospectives based on answers
 4. **Results**: Users see a ranked list of recommended retrospectives

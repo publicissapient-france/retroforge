@@ -4,8 +4,9 @@
   "home": {
     "title": "Home",
     "welcomeLabel": "Match your ideal retrospective.",
-    "start": "Start",
+    "start": "Simple mode",
     "advanced": "Advanced mode",
+    "coachRetro": "AI Agent mode",
     "redCardQuestion": "The team encountered quite a few difficulties in the last sprint.",
     "whiteCardQuestion": "I master Scrum like a boss."
   },
@@ -16,10 +17,10 @@
   },
   "breadcrumb": {
     "hammer-swipe": {
-      "title": "Hammer Swipe"
+      "title": "Simple Mode"
     },
     "deep-anvil": {
-      "title": "Deep Anvil"
+      "title": "Advanced Mode"
     },
     "match": {
       "title": "Match"
@@ -29,11 +30,11 @@
     }
   },
   "hammerSwipe": {
-    "title": "Hammer Swipe",
+    "title": "Simple Mode",
     "description": "Swipe left or right to get the most suitable retrospective!"
   },
   "deepAnvil": {
-    "title": "Deep Anvil",
+    "title": "Advanced Mode",
     "description": "Select the answer that best matches your needs from the list to get the most suitable retrospective!"
   },
   "actions": {
