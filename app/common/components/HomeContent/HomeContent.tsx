@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { NavLink } from 'react-router'
 
@@ -13,47 +12,33 @@ import styles from './HomeContent.module.css'
 export default function HomeContent() {
   const { t } = useTranslation()
 
-  const [isSmall, setIsSmall] = useState(() => typeof window !== 'undefined' &&
-    window.matchMedia('(max-width: 1100px)').matches)
-
-  function registerOnMediaChange(event: MediaQueryListEvent) {
-    setIsSmall(event.matches)
-  }
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 1100px)')
-    mediaQuery.addEventListener('change', registerOnMediaChange)
-
-    return () => mediaQuery.removeEventListener('change', registerOnMediaChange)
-  }, [])
-
   return (
     <div className={styles.content}>
       <div className={styles.left}>
-        <div className="max-[1100px]:text-center">{t('home.welcomeLabel')}</div>
-        <section className="pt-10 flex flex-col gap-5">
-          <div className="flex gap-5 max-[1100px]:flex-col">
-            <NavLink to="/hammer-swipe" title={t('home.tooltips.start')} className="font-bold uppercase text-white dark:text-black bg-(--accent-color) hover:bg-(--accent-color-hover) rounded-full text-lg px-15 py-2.5 dark:bg-(--accent-color-dark) dark:hover:bg-(--accent-color-dark-hover) text-center">{t('home.start')}</NavLink>
-            <NavLink to="/deep-anvil" title={t('home.tooltips.advanced')} className="font-bold uppercase text-white dark:text-black bg-(--accent-color) hover:bg-(--accent-color-hover) rounded-full text-lg px-15 py-2.5 dark:bg-(--accent-color-dark) dark:hover:bg-(--accent-color-dark-hover) text-center">{t('home.advanced')}</NavLink>
+        <div className={styles.title}>{t('home.welcomeLabel')}</div>
+        <section className={styles.actionsSection}>
+          <div className={styles.ctaRow}>
+            <NavLink to="/hammer-swipe" title={t('home.tooltips.start')} className={`${styles.ctaButton} ${styles.primaryCta}`}>{t('home.start')}</NavLink>
+            <NavLink to="/deep-anvil" title={t('home.tooltips.advanced')} className={`${styles.ctaButton} ${styles.secondaryCta}`}>{t('home.advanced')}</NavLink>
             <a
               href="https://tinyurl.com/coachretro"
               target="_blank"
               rel="noopener noreferrer"
               title={t('home.tooltips.coachRetro')}
-              className="font-bold uppercase text-white dark:text-black bg-(--accent-color) hover:bg-(--accent-color-hover) rounded-full text-lg px-15 py-2.5 dark:bg-(--accent-color-dark) dark:hover:bg-(--accent-color-dark-hover) text-center"
+              className={`${styles.ctaButton} ${styles.secondaryCta}`}
             >
               {t('home.coachRetro')}
             </a>
           </div>
-          <NavLink to="/retrospectives" className="tracking-[-0.05rem] ml-2 max-[1100px]:text-center">{t('retrospectives.seeAll')}</NavLink>
-                <h3 className="right uppercase text-(--accent-color) dark:text-(--accent-color-dark)"><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=oZ4s1SF8sUeCozOnSx90uGCkTilWip1PpA6dC9L_8JhURU9TU1pORlVRNEQ0VDM0S0pVRlBFNjlaTS4u" title="Linktitle" target="_blank" rel="noopener noreferrer">Share your feedback</a></h3>
+          <NavLink to="/retrospectives" className={styles.seeAllLink}>{t('retrospectives.seeAll')}</NavLink>
+          <h3 className={`${styles.feedbackLink} text-(--accent-color) dark:text-(--accent-color-dark)`}><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=oZ4s1SF8sUeCozOnSx90uGCkTilWip1PpA6dC9L_8JhURU9TU1pORlVRNEQ0VDM0S0pVRlBFNjlaTS4u" title="Linktitle" target="_blank" rel="noopener noreferrer">Share your feedback</a></h3>
         </section>
       </div>
-      {!isSmall && (
-        <div className={`${styles.right} relative h-full flex items-center ml-10`}>
+      <div className={styles.right}>
+        <div className={styles.cardStack}>
           <HomeCard
-            className="dark:bg-(--accent-color-dark) bg-(--accent-color) text-white absolute"
-            rotation={-10}
+            className={`${styles.card} ${styles.redCard} dark:bg-(--accent-color-dark) bg-(--accent-color) text-white`}
+            rotation={-7}
             icon={<img src={confusedFace} alt="confused face" width="72" />}
             question={t('home.redCardQuestion')}
           >
@@ -61,8 +46,8 @@ export default function HomeContent() {
             <HomeCardAction icon={<ButtonYes className="w-[25px] h-[20px] text-(--accent-color) dark:text-(--accent-color-dark)" />} />
           </HomeCard>
           <HomeCard
-            className="bg-white dark:bg-gray-700 absolute left-[200px]"
-            rotation={5}
+            className={`${styles.card} ${styles.whiteCard} bg-white dark:bg-gray-700`}
+            rotation={3}
             icon={<img src={rugbyBalloon} alt="Rugby balloon" width="72" />}
             question={t('home.whiteCardQuestion')}
           >
@@ -70,7 +55,7 @@ export default function HomeContent() {
             <HomeCardAction icon={<ButtonYes className="w-[25px] h-[20px] text-(--accent-color) dark:text-(--accent-color-dark)" />} />
           </HomeCard>
         </div>
-      )}
+      </div>
     </div>
   )
 }
