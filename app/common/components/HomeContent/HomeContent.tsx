@@ -18,7 +18,7 @@ export default function HomeContent() {
         <div className={styles.title}>{t('home.welcomeLabel')}</div>
         <section className={styles.actionsSection}>
           <div className={styles.ctaRow}>
-            <NavLink to="/hammer-swipe" title={t('home.tooltips.start')} className={`${styles.ctaButton} ${styles.primaryCta}`}>{t('home.start')}</NavLink>
+            <NavLink to="/hammer-swipe" title={t('home.tooltips.start')} className={`${styles.ctaButton} ${styles.secondaryCta}`}>{t('home.start')}</NavLink>
             <NavLink to="/deep-anvil" title={t('home.tooltips.advanced')} className={`${styles.ctaButton} ${styles.secondaryCta}`}>{t('home.advanced')}</NavLink>
             <a
               href="https://tinyurl.com/coachretro"
