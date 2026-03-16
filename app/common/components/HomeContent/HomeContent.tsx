@@ -33,8 +33,17 @@ export default function HomeContent() {
         <div className="max-[1100px]:text-center">{t('home.welcomeLabel')}</div>
         <section className="pt-10 flex flex-col gap-5">
           <div className="flex gap-5 max-[1100px]:flex-col">
-            <NavLink to="/hammer-swipe" className="font-bold uppercase text-white dark:text-black bg-(--accent-color) hover:bg-(--accent-color-hover) rounded-full text-lg px-15 py-2.5 dark:bg-(--accent-color-dark) dark:hover:bg-(--accent-color-dark-hover) text-center">{t('home.start')}</NavLink>
-            <NavLink to="/deep-anvil" className="font-bold uppercase  text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-full text-lg px-15 py-2.5 me-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 text-center">{t('home.advanced')}</NavLink>
+            <NavLink to="/hammer-swipe" title={t('home.tooltips.start')} className="font-bold uppercase text-white dark:text-black bg-(--accent-color) hover:bg-(--accent-color-hover) rounded-full text-lg px-15 py-2.5 dark:bg-(--accent-color-dark) dark:hover:bg-(--accent-color-dark-hover) text-center">{t('home.start')}</NavLink>
+            <NavLink to="/deep-anvil" title={t('home.tooltips.advanced')} className="font-bold uppercase text-white dark:text-black bg-(--accent-color) hover:bg-(--accent-color-hover) rounded-full text-lg px-15 py-2.5 dark:bg-(--accent-color-dark) dark:hover:bg-(--accent-color-dark-hover) text-center">{t('home.advanced')}</NavLink>
+            <a
+              href="https://tinyurl.com/coachretro"
+              target="_blank"
+              rel="noopener noreferrer"
+              title={t('home.tooltips.coachRetro')}
+              className="font-bold uppercase text-white dark:text-black bg-(--accent-color) hover:bg-(--accent-color-hover) rounded-full text-lg px-15 py-2.5 dark:bg-(--accent-color-dark) dark:hover:bg-(--accent-color-dark-hover) text-center"
+            >
+              {t('home.coachRetro')}
+            </a>
           </div>
           <NavLink to="/retrospectives" className="tracking-[-0.05rem] ml-2 max-[1100px]:text-center">{t('retrospectives.seeAll')}</NavLink>
                 <h3 className="right uppercase text-(--accent-color) dark:text-(--accent-color-dark)"><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=oZ4s1SF8sUeCozOnSx90uGCkTilWip1PpA6dC9L_8JhURU9TU1pORlVRNEQ0VDM0S0pVRlBFNjlaTS4u" title="Linktitle" target="_blank" rel="noopener noreferrer">Share your feedback</a></h3>

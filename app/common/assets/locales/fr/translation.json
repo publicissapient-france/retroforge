@@ -6,6 +6,12 @@
     "welcomeLabel": "Match ta rétro idéale.",
     "start": "Commencer",
     "advanced": "Mode avancé",
+    "coachRetro": "Mode agent IA",
+    "tooltips": {
+      "start": "Ouvrir le mode simple avec des cartes a swiper.",
+      "advanced": "Ouvrir le mode avance avec un parcours de questions detaille.",
+      "coachRetro": "Ouvrir l'assistant IA CoachRetro dans un nouvel onglet."
+    },
     "redCardQuestion": "L'équipe a rencontré pas mal de difficultés au dernier sprint.",
     "whiteCardQuestion": "Je maîtrise Scrum comme un chef."
   },
@@ -16,10 +22,10 @@
   },
   "breadcrumb": {
     "hammer-swipe": {
-      "title": "Hammer Swipe"
+      "title": "Simple Mode"
     },
     "deep-anvil": {
-      "title": "Deep Anvil"
+      "title": "Advanced Mode"
     },
     "match": {
       "title": "Match"
@@ -29,11 +35,11 @@
     }
   },
   "hammerSwipe": {
-    "title": "Hammer Swipe",
+    "title": "Simple Mode",
     "description": "Swippez vers la gauche ou la droite pour obtenir la retrospective la plus adaptée !"
   },
   "deepAnvil": {
-    "title": "Deep Anvil",
+    "title": "Advanced Mode",
     "description": "Sélectionnez la réponse qui vous correspond le mieux parmis la liste pour obtenir la retrospective la plus adaptée !"
   },
   "actions": {
