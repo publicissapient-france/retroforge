@@ -102,12 +102,6 @@
 
 .actionIcon {
     font-size: 0.9em;
-    transition: transform 180ms ease;
-}
-
-.seeAllLink:hover .actionIcon,
-.feedbackLink:hover .actionIcon {
-    transform: translateX(1px);
 }
 
 .seeAllLink {
@@ -122,12 +116,12 @@
     text-decoration-thickness: 1px;
     text-underline-offset: 0.2em;
     text-decoration-color: transparent;
-    opacity: 0.88;
+    opacity: 0.74;
     transition: opacity 180ms ease, color 180ms ease, text-decoration-color 180ms ease;
 }
 
 .seeAllLink:hover {
-    opacity: 1;
+    opacity: 0.9;
     text-decoration-color: currentColor;
 }
 
@@ -149,6 +143,7 @@
 
 .feedbackLink:hover {
     color: var(--accent-color-hover);
+    font-weight: 750;
     text-decoration-color: currentColor;
 }
 
@@ -299,8 +294,7 @@
     .ctaButton,
     .card,
     .seeAllLink,
-    .feedbackLink,
-    .actionIcon {
+    .feedbackLink {
         transition: none;
     }
 
