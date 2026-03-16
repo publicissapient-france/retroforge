@@ -7,6 +7,11 @@
     "start": "Simple mode",
     "advanced": "Advanced mode",
     "coachRetro": "AI Agent mode",
+    "tooltips": {
+      "start": "Open simple mode with swipe-based matching.",
+      "advanced": "Open advanced mode with detailed question flow.",
+      "coachRetro": "Open CoachRetro AI assistant in a new tab."
+    },
     "redCardQuestion": "The team encountered quite a few difficulties in the last sprint.",
     "whiteCardQuestion": "I master Scrum like a boss."
   },

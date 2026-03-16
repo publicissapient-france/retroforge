@@ -6,6 +6,12 @@
     "welcomeLabel": "Match ta rétro idéale.",
     "start": "Commencer",
     "advanced": "Mode avancé",
+    "coachRetro": "Mode agent IA",
+    "tooltips": {
+      "start": "Ouvrir le mode simple avec des cartes a swiper.",
+      "advanced": "Ouvrir le mode avance avec un parcours de questions detaille.",
+      "coachRetro": "Ouvrir l'assistant IA CoachRetro dans un nouvel onglet."
+    },
     "redCardQuestion": "L'équipe a rencontré pas mal de difficultés au dernier sprint.",
     "whiteCardQuestion": "Je maîtrise Scrum comme un chef."
   },
