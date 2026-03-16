@@ -92,28 +92,71 @@
     background: color-mix(in srgb, var(--accent-color) 20%, white 80%);
 }
 
+.tertiaryActions {
+    margin-top: clamp(2px, 0.8vw, 8px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: clamp(4px, 0.8vw, 8px);
+}
+
+.actionIcon {
+    font-size: 0.9em;
+    transition: transform 180ms ease;
+}
+
+.seeAllLink:hover .actionIcon,
+.feedbackLink:hover .actionIcon {
+    transform: translateX(1px);
+}
+
 .seeAllLink {
     margin-left: 2px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     font-size: clamp(0.77rem, 0.85vw, 0.9rem);
-    letter-spacing: -0.05rem;
-    opacity: 0.9;
-    transition: opacity 180ms ease;
+    letter-spacing: -0.03rem;
+    color: color-mix(in srgb, black 78%, var(--accent-color) 22%);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+    text-decoration-color: transparent;
+    opacity: 0.88;
+    transition: opacity 180ms ease, color 180ms ease, text-decoration-color 180ms ease;
 }
 
 .seeAllLink:hover {
     opacity: 1;
+    text-decoration-color: currentColor;
 }
 
 .feedbackLink {
-    margin-top: clamp(6px, 1vw, 12px);
+    margin-top: clamp(2px, 0.4vw, 5px);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     font-size: clamp(0.98rem, 1.22vw, 1.2rem);
     line-height: 1.1;
     text-transform: uppercase;
-    transition: opacity 180ms ease;
+    color: var(--accent-color);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+    text-decoration-color: transparent;
+    transition: color 180ms ease, text-decoration-color 180ms ease;
 }
 
 .feedbackLink:hover {
-    opacity: 0.86;
+    color: var(--accent-color-hover);
+    text-decoration-color: currentColor;
+}
+
+.seeAllLink:focus-visible,
+.feedbackLink:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-color) 35%, white 65%);
+    border-radius: 6px;
 }
 
 .right {
@@ -215,6 +258,10 @@
     .feedbackLink {
         margin-left: 0;
     }
+
+    .feedbackLink {
+        margin-top: 0;
+    }
 }
 
 @media screen and (max-width: 520px) {
@@ -236,17 +283,29 @@
     .actionsSection {
         gap: 12px;
     }
+
+    .tertiaryActions {
+        width: 100%;
+    }
+
+    .seeAllLink,
+    .feedbackLink {
+        width: 100%;
+        justify-content: space-between;
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
     .ctaButton,
     .card,
     .seeAllLink,
-    .feedbackLink {
+    .feedbackLink,
+    .actionIcon {
         transition: none;
     }
 
     .ctaButton:hover {
         transform: none;
     }
+
 }

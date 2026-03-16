@@ -30,8 +30,22 @@ export default function HomeContent() {
               {t('home.coachRetro')}
             </a>
           </div>
-          <NavLink to="/retrospectives" className={styles.seeAllLink}>{t('retrospectives.seeAll')}</NavLink>
-          <h3 className={`${styles.feedbackLink} text-(--accent-color) dark:text-(--accent-color-dark)`}><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=oZ4s1SF8sUeCozOnSx90uGCkTilWip1PpA6dC9L_8JhURU9TU1pORlVRNEQ0VDM0S0pVRlBFNjlaTS4u" title="Linktitle" target="_blank" rel="noopener noreferrer">Share your feedback</a></h3>
+          <div className={styles.tertiaryActions}>
+            <NavLink to="/retrospectives" className={styles.seeAllLink}>
+              <span>{t('retrospectives.seeAll')}</span>
+              <span aria-hidden="true" className={styles.actionIcon}>→</span>
+            </NavLink>
+            <a
+              href="https://forms.office.com/Pages/ResponsePage.aspx?id=oZ4s1SF8sUeCozOnSx90uGCkTilWip1PpA6dC9L_8JhURU9TU1pORlVRNEQ0VDM0S0pVRlBFNjlaTS4u"
+              title="Linktitle"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.feedbackLink}
+            >
+              <span>Share your feedback</span>
+              <span aria-hidden="true" className={styles.actionIcon}>↗</span>
+            </a>
+          </div>
         </section>
       </div>
       <div className={styles.right}>
