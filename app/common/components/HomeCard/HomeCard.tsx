@@ -21,10 +21,10 @@ export function HomeCardAction({ icon }: HomeCardActionProps) {
 
 export default function HomeCard({ children, className, icon, question, rotation = 0 }: PropsWithChildren<HomeCardProps>) {
   return (
-    <div style={{ rotate: `${rotation}deg` }} className={`${className} flex flex-col items-center rounded-4xl max-md:w-[300px] md:w-[335px] max-md:h-90 md:h-110 p-10 justify-between shadow-2xl`}>
+    <div style={{ rotate: `${rotation}deg` }} className={`${className} flex flex-col items-center rounded-4xl w-[clamp(260px,24vw,335px)] h-[clamp(350px,28vw,440px)] p-[clamp(1.5rem,2.2vw,2.5rem)] justify-between shadow-2xl`}>
       {icon}
-      <p className="uppercase text-3xl font-bold">{question}</p>
-      <div className="flex w-full justify-between px-2">
+      <p className="uppercase text-[clamp(1.55rem,2.1vw,2.1rem)] leading-[1.05] font-bold">{question}</p>
+      <div className="flex w-full justify-between px-[clamp(0.2rem,0.5vw,0.6rem)]">
         {children}
       </div>
     </div>

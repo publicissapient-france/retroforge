@@ -1,47 +1,305 @@
 @import '../../assets/styles/variables.css';
 
-@media screen and (max-width: 1100px) {
+.content {
+    --hero-shadow-neutral: rgb(0 0 0 / 0.12);
+    --hero-shadow-accent: color-mix(in srgb, var(--accent-color) 34%, transparent 66%);
+    width: min(1280px, 100%);
+    margin-inline: auto;
+    min-height: clamp(460px, 62vh, 760px);
+    display: grid;
+    grid-template-columns: minmax(320px, 0.95fr) minmax(320px, 1.05fr);
+    align-items: center;
+    gap: clamp(20px, 4vw, 72px);
+    padding-block: clamp(12px, 2vh, 28px);
+}
+
+.left {
+    max-width: 36rem;
+    align-self: center;
+}
+
+.title {
+    font-size: clamp(3rem, 7vw, 7.3rem);
+    font-weight: 700;
+    letter-spacing: var(--title-letter-spacing);
+    line-height: 0.92;
+    max-width: 13ch;
+    text-wrap: balance;
+}
+
+.actionsSection {
+    margin-top: clamp(20px, 3.2vw, 40px);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(10px, 1.5vw, 16px);
+}
+
+.ctaRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(10px, 1.1vw, 16px);
+    max-width: 36rem;
+}
+
+.ctaButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 9999px;
+    border: 2px solid transparent;
+    text-align: center;
+    font-size: clamp(0.88rem, 1.05vw, 1rem);
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+    text-wrap: balance;
+    min-height: 48px;
+    padding: clamp(0.58rem, 0.9vw, 0.82rem) clamp(1.2rem, 2.1vw, 2.5rem);
+    flex: 1 1 170px;
+    min-width: 172px;
+    transition: transform 180ms ease, box-shadow 220ms ease, background-color 220ms ease, color 220ms ease;
+    will-change: transform;
+}
+
+.ctaButton:hover {
+    transform: translateY(-2px);
+}
+
+.ctaButton:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-color) 35%, white 65%);
+}
+
+.primaryCta {
+    color: white;
+    background: var(--accent-color);
+    box-shadow: 0 10px 24px var(--hero-shadow-accent);
+}
+
+.primaryCta:hover {
+    background: var(--accent-color-hover);
+    box-shadow: 0 12px 26px color-mix(in srgb, var(--accent-color-hover) 36%, transparent 64%);
+}
+
+.secondaryCta {
+    color: var(--accent-color);
+    background: color-mix(in srgb, var(--accent-color) 12%, white 88%);
+    border-color: color-mix(in srgb, var(--accent-color) 30%, transparent 70%);
+}
+
+.secondaryCta:hover {
+    background: color-mix(in srgb, var(--accent-color) 20%, white 80%);
+}
+
+.tertiaryActions {
+    margin-top: clamp(2px, 0.8vw, 8px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: clamp(4px, 0.8vw, 8px);
+}
+
+.actionIcon {
+    font-size: 0.9em;
+}
+
+.seeAllLink {
+    margin-left: 2px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: clamp(0.77rem, 0.85vw, 0.9rem);
+    letter-spacing: -0.03rem;
+    color: color-mix(in srgb, black 78%, var(--accent-color) 22%);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+    text-decoration-color: transparent;
+    opacity: 0.74;
+    transition: opacity 180ms ease, color 180ms ease, text-decoration-color 180ms ease;
+}
+
+.seeAllLink:hover {
+    opacity: 0.9;
+    text-decoration-color: currentColor;
+}
+
+.feedbackLink {
+    margin-top: clamp(2px, 0.4vw, 5px);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: clamp(0.98rem, 1.22vw, 1.2rem);
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+    text-decoration-color: transparent;
+    transition: color 180ms ease, text-decoration-color 180ms ease;
+}
+
+.feedbackLink:hover {
+    color: var(--accent-color-hover);
+    font-weight: 750;
+    text-decoration-color: currentColor;
+}
+
+.seeAllLink:focus-visible,
+.feedbackLink:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-color) 35%, white 65%);
+    border-radius: 6px;
+}
+
+.right {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardStack {
+    position: relative;
+    width: clamp(360px, 42vw, 620px);
+    height: clamp(380px, 42vw, 600px);
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: transform 260ms ease, filter 260ms ease;
+    filter: drop-shadow(0 14px 20px var(--hero-shadow-neutral));
+}
+
+.redCard {
+    z-index: 1;
+    transform: translate(-61%, -51%);
+    filter: drop-shadow(0 14px 22px var(--hero-shadow-accent));
+}
+
+.whiteCard {
+    z-index: 2;
+    transform: translate(-19%, -47%);
+}
+
+@media screen and (max-width: 1250px) {
     .content {
-        height: 100%;
-        display: flex;
+        grid-template-columns: minmax(300px, 1fr) minmax(280px, 0.95fr);
+        gap: clamp(18px, 2.8vw, 32px);
     }
 
-    .left {
-        align-self: center;
-        width: 100%;
+    .title {
+        font-size: clamp(2.85rem, 7vw, 5.2rem);
+        max-width: 12ch;
+    }
 
-        & > div {
-            font-size: var(--text-5xl);
-            font-weight: bold;
-            letter-spacing: var(--title-letter-spacing);
-            line-height: 3rem;
-        }
+    .ctaButton {
+        flex-basis: 154px;
+        min-width: 150px;
+        padding-inline: clamp(1.1rem, 1.8vw, 2rem);
+    }
+
+    .cardStack {
+        width: clamp(320px, 40vw, 500px);
+        height: clamp(340px, 40vw, 500px);
+    }
+
+    .redCard {
+        transform: translate(-65%, -50%) scale(0.88);
+    }
+
+    .whiteCard {
+        transform: translate(-26%, -46%) scale(0.88);
     }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (max-width: 1080px) {
     .content {
-        height: 100%;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto;
-        grid-template-areas: "left right";
+        min-height: unset;
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding-block: 8px;
     }
 
     .left {
-        grid-area: left;
-        align-self: center;
+        max-width: 100%;
+        width: 100%;
+    }
 
-        & > div {
-            font-size: var(--text-9xl);
-            font-weight: bold;
-            letter-spacing: var(--title-letter-spacing);
-            line-height: 8rem;
-        }
+    .title {
+        font-size: clamp(2.7rem, 12vw, 4.7rem);
+        text-align: left;
+    }
+
+    .ctaRow {
+        justify-content: flex-start;
+        max-width: 100%;
+    }
+
+    .ctaButton {
+        flex: 1 1 140px;
+        min-width: 140px;
     }
 
     .right {
-        grid-area: right;
-        align-self: center;
+        display: none;
     }
+
+    .seeAllLink,
+    .feedbackLink {
+        margin-left: 0;
+    }
+
+    .feedbackLink {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .title {
+        font-size: clamp(2.35rem, 13.2vw, 3.95rem);
+        max-width: 11ch;
+    }
+
+    .ctaRow {
+        gap: 10px;
+    }
+
+    .ctaButton {
+        flex: 1 1 100%;
+        min-width: 0;
+        min-height: 50px;
+    }
+
+    .actionsSection {
+        gap: 12px;
+    }
+
+    .tertiaryActions {
+        width: 100%;
+    }
+
+    .seeAllLink,
+    .feedbackLink {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .ctaButton,
+    .card,
+    .seeAllLink,
+    .feedbackLink {
+        transition: none;
+    }
+
+    .ctaButton:hover {
+        transform: none;
+    }
+
 }

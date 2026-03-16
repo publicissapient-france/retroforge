@@ -4,28 +4,61 @@
     display: block;
     position: relative;
     overflow: hidden;
-    padding: 20px 19px;
+    padding: clamp(18px, 2vw, 28px) 19px 8px;
     text-align: center;
 }
 
 .arrowContainer {
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 50%;
-    margin-left: 50px;
+    margin-left: clamp(34px, 4vw, 54px);
     opacity: 0;
     transform-origin: bottom left;
     transform: rotate(90deg);
-    animation: ArrowAnim 0.5s ease-out 0.25s forwards;
+    animation: ArrowAnim 0.55s ease-out 0.2s forwards;
 }
 
 .footerArrow {
-    padding-top: 55px;
+    padding-top: clamp(42px, 5vw, 56px);
 }
 
 .arrowText {
-    line-height: 1.5em;
-    font-size: 0.8rem;
+    line-height: 1.4;
+    font-size: clamp(0.72rem, 0.8vw, 0.8rem);
+    opacity: 0.92;
+}
+
+@media screen and (max-width: 980px) {
+    .footer {
+        padding-top: 14px;
+    }
+
+    .footerArrow {
+        padding-top: 34px;
+    }
+
+    .arrowContainer {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .footerArrow {
+        padding-top: 22px;
+    }
+
+    .arrowContainer {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .arrowContainer {
+        animation: none;
+        opacity: 1;
+        transform: rotate(0deg);
+    }
 }
 
 @keyframes ArrowAnim {
