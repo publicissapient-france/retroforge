@@ -9,13 +9,19 @@ export default function Footer() {
   const { t } = useTranslation()
   return (
     <div className={`${styles.footer} ${styles.footerArrow}`}>
-      <div className="leading-[0] flex justify-center">
-        <img src={psLogo} width="55" alt="logo publicis sapient" />
-      </div>
-      <div className={styles.arrowContainer}>
-        <div className={`${styles.arrowText} dark:text-white text-[#555555]`}>{t('footer.whoAreWe')} <span className="text-(--accent-color)">?</span></div>
-        <FooterArrow className="dark:text-white" />
-      </div>
+      <a
+        href="mailto:retroforge@publicissapient.com?subject=Retroforge%20question"
+        aria-label="Contact Publicis Sapient by email"
+        className={styles.contactLink}
+      >
+        <div className="leading-[0] flex justify-center">
+          <img src={psLogo} width="55" alt="logo publicis sapient" />
+        </div>
+        <div className={styles.arrowContainer}>
+          <div className={`${styles.arrowText} dark:text-white text-[#555555]`}>{t('footer.whoAreWe')} <span className="text-(--accent-color)">?</span></div>
+          <FooterArrow className="dark:text-white" />
+        </div>
+      </a>
     </div>
   )
 }
