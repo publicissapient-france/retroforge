@@ -8,6 +8,18 @@
     text-align: center;
 }
 
+.contactLink {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.contactLink:focus-visible {
+    outline: 2px solid color-mix(in srgb, var(--accent-color) 42%, white 58%);
+    outline-offset: 6px;
+    border-radius: 8px;
+}
+
 .arrowContainer {
     position: absolute;
     top: -2px;
